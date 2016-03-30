@@ -80,3 +80,9 @@ crashlytics.properties
 crashlytics-build.properties
 
 .idea
+
+### Jekyll template
+_site/
+.sass-cache/
+.jekyll-metadata
+
