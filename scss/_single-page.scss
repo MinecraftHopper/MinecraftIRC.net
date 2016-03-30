@@ -1,0 +1,21 @@
+.single-page {
+  margin: 25px auto;
+
+  h1, .page-heading {
+    font-size: 2rem;
+  }
+
+  h2, .page-subheading {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  ol.indent, ul.indent {
+    li {
+      margin-left: 20px;
+    }
+  }
+}

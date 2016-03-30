@@ -1,0 +1,52 @@
+header {
+  background-color: #4a4a4a;
+
+  li, a, .menu-text {
+    color: white;
+    padding: 0;
+  }
+
+  .menu a:hover {
+    color: #c9c9c9;
+  }
+
+  .top-bar {
+    max-width: rem-calc(1100px);
+    margin: auto;
+    font-size: 1.25rem;
+  }
+
+  .menu-button {
+    text-align: right;
+    color: white;
+
+    @include breakpoint (small only) {
+      padding-top: 7px;
+    }
+  }
+
+  .menu > .is-submenu-item a {
+    color: black;
+    font-size: 1rem;
+
+    &:hover {
+      color: #808080;
+    }
+  }
+
+  .menu-text.site-title {
+    padding-left: 0;
+  }
+
+  .site-title {
+    font-size: 1.25rem;
+    letter-spacing: -0.1px;
+  }
+
+  .top-bar-left, .top-bar-right {
+    @include breakpoint (small only) {
+      width: inherit;
+      padding-top: 5px;
+    }
+  }
+}

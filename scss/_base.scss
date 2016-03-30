@@ -1,0 +1,13 @@
+body {
+  font-family: 'Lato', 'Helvetica', 'Trebuchet MS', 'Arial', sans-serif;
+}
+
+.master-container {
+  max-width: rem-calc(1080px);
+  margin: auto;
+  padding: 0 20px;
+}
+
+li.list-heading {
+  list-style: none;
+}

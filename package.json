@@ -1,0 +1,32 @@
+{
+  "name": "minecraftirc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "normalize-scss": "^4.0.3",
+    "okaynav": "^2.0.2",
+    "sass-module-importer": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tyteen4a03@github.com/MinecraftIRC/MinecraftIRC.net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinecraftIRC/MinecraftIRC.net/issues"
+  },
+  "homepage": "https://github.com/MinecraftIRC/MinecraftIRC.net#readme"
+}
