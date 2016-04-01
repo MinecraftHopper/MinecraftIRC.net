@@ -3657,13 +3657,6 @@ header {
 .landing-page .chat-iframe {
   display: block;
   margin: 40px auto; }
-  @media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
-    .landing-page .chat-iframe.no-mobile {
-      display: none !important; } }
-
-@media screen and (min-width: 64em) {
-  .landing-page .mobile-message {
-    display: none !important; } }
 
 footer {
   width: 100%;
