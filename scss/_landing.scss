@@ -2,13 +2,4 @@
   .chat-iframe {
     display: block;
     margin: 40px auto;
-
-    &.no-mobile {
-      @include show-for-only(large);
-    }
-  }
-
-  .mobile-message {
-    @include hide-for(large up);
-  }
 }
