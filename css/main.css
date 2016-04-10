@@ -3608,7 +3608,7 @@ body {
   margin: auto;
   padding: 0 20px;
   min-height: 95%;
-  min-height: calc(100% - 180px); }
+  min-height: calc(100% - 220px); }
 
 li.list-heading {
   list-style: none; }
