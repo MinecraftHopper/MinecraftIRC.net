@@ -3606,7 +3606,9 @@ body {
 .master-container {
   max-width: 67.5rem;
   margin: auto;
-  padding: 0 20px; }
+  padding: 0 20px;
+  min-height: 95%;
+  min-height: calc(100% - 180px); }
 
 li.list-heading {
   list-style: none; }
