@@ -1,0 +1,19 @@
+questions {
+  question {
+    .choices {
+      list-style: none;
+
+      input {
+        margin-right: 15px;
+      }
+    }
+
+    .back-button, .next-button, .enter-button {
+      @include button;
+
+      &.disabled {
+        @include button-disabled;
+      }
+    }
+  }
+}

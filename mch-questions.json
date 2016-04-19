@@ -1,0 +1,106 @@
+{
+  "questions": {
+    "intro": {
+      "heading": "Welcome to #minecrafthelp!",
+      "description": "We'll ask you a few questions to help you figure out whether you need to use our service. Chances are you don't at all! Fill in the quick questionnaire below to get help instantly without needing to wait for a volunteer.",
+      "question": "What can we help you with today?",
+      "choices": [
+        {
+          "text": "Account Issues",
+          "to": "account-issues"
+        },
+        {
+          "text": "Technical Issues",
+          "to": "technical-issues.is-pc"
+        },
+        {
+          "text": "In-game Questions",
+          "to": "in-game-questions"
+        },
+        {
+          "text": "I'm not sure",
+          "to": "not-sure"
+        }
+      ]
+    },
+    "account-issues": {
+      "heading": "Account Issues",
+      "description": "While we are unable to help with accounts issues (we are not Mojang), you may still want to look at the resources below.",
+      "question": "What account issues are you having?",
+      "choices": [
+        {
+          "text": "Unable to log into Minecraft",
+          "to": "account-issues.logged-in-before"
+        },
+        {
+          "text": "Payment issues",
+          "to": "account-issues.payment-issues"
+        },
+        {
+          "text": "Account was hacked",
+          "to": "account-issues.account-hacked"
+        }
+      ]
+    },
+    "account-issues.logged-in-before": {
+      "heading": "",
+      "description": "",
+      "question": "Have you been able to log into Minecraft before?",
+      "choices": [
+        {
+          "text": "Yes",
+          "to": "account-issues.logged-in-before"
+        },
+        {
+          "text": "No",
+          "to": "account-issues.payment-issues"
+        }
+      ]
+    },
+    "technical-issues.is-pc": {
+      "heading": "",
+      "description": "Are you looking for help with Minecraft for Windows/Mac/Linux? (Excluding Windows 10 Edition)",
+      "choices": [
+        {
+          "text": "Yes",
+          "to": "technical-issues.is-modded"
+        },
+        {
+          "text": "No",
+          "to": "technical-issues.end-pc"
+        }
+      ]
+    },
+    "technical-issues.end-pc": {
+      "heading": "",
+      "description": "Unfortunately, we do not offer support for other Minecraft versions. You can try the resources below:<br><ul><li>Minecraft PE/Windows 10 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support\">http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support</a></li><li>Minecraft: Xbox 360 Edition: <a href=\"http://www.minecraftforum.net/forum/230-mcx360-help-support/\">http://www.minecraftforum.net/forum/230-mcx360-help-support/</a></li><li>Minecraft: Xbox One Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition\">http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition</a></li><li>Minecraft: PS3 Edition: <a href=\"http://www.minecraftforum.net/forum/331-ps3-edition-support/\">http://www.minecraftforum.net/forum/331-ps3-edition-support/</a></li><li>Minecraft: PS4 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition\">http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition</a></li><li>Minecraft: Playstation Vita Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-vita\">http://www.minecraftforum.net/forums/support/minecraft-playstation-vita</a></li></ul>",
+      "choices": null
+    },
+    "technical-issues.is-modded": {
+      "heading": "",
+      "description": "Is your Minecraft modded? Note that server plugins also counts as mods.",
+      "choices": [
+        {
+          "text": "Yes",
+          "to": "technical-issues.end-modded"
+        },
+        {
+          "text": "No",
+          "to": "technical-issues.ready"
+        }
+      ]
+    },
+    "technical-issues.end-modded": {
+      "heading": "",
+      "description": "We do not offer support for modded clients or servers. For help with mods, contact the mod's author on the mod's thread (usually on Minecraft Forums). Also, try the <a href=\"http://www.minecraftforum.net/forums/support/modded-client-support\">Modded Client Support</a> section.<br/><br/>If you would like help with removing all mods, see <a href=\"http://hopper.minecraft.net/help/guides/reinstalling-minecraft/\">this guide</a> for more information. You'll need to remove all mods before requesting support.",
+      "choices": null
+    },
+    "technical-issues.ready": {
+      "heading": "Ready to go!",
+      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs/dxdiag logs ready</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "canEnter": true
+    }
+  },
+  "onExit": ".chat-iframe",
+  "startQuestion": "intro"
+}

@@ -26,3 +26,5 @@ exclude:
   - "package.json"
   - "Gemfile"
   - "Gemfile.lock"
+  - "scss"
+  - "js-src"

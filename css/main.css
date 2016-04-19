@@ -3656,6 +3656,9 @@ header {
   .single-page ol.indent li, .single-page ul.indent li {
     margin-left: 20px; }
 
+.landing-page .questions-wrapper {
+  margin: 40px auto; }
+
 .landing-page .chat-iframe {
   display: block;
   margin: 40px auto; }
@@ -3677,3 +3680,33 @@ footer {
         padding: 40px 0; } }
     footer .wrapper p {
       margin: 0; }
+
+questions question .choices {
+  list-style: none; }
+  questions question .choices input {
+    margin-right: 15px; }
+
+questions question .back-button, questions question .next-button, questions question .enter-button {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  background-color: #2199e8;
+  color: #fefefe; }
+  [data-whatinput='mouse'] questions question .back-button, [data-whatinput='mouse'] questions question .next-button, [data-whatinput='mouse'] questions question .enter-button {
+    outline: 0; }
+  questions question .back-button:hover, questions question .back-button:focus, questions question .next-button:hover, questions question .next-button:focus, questions question .enter-button:hover, questions question .enter-button:focus {
+    background-color: #1583cc;
+    color: #fefefe; }
+  questions question .back-button.disabled, questions question .next-button.disabled, questions question .enter-button.disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+    pointer-events: none; }

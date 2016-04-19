@@ -1,6 +1,4 @@
 module.exports = function (grunt) {
-    //var moduleImporter = require('sass-module-importer');
-
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -11,7 +9,8 @@ module.exports = function (grunt) {
                     'node_modules/normalize-scss/sass',
                     'node_modules/foundation-sites/scss',
                     'node_modules/okaynav/dist/css'
-                ]
+                ],
+                sourceMap: false
             },
             dist: {
                 files: {
@@ -19,23 +18,19 @@ module.exports = function (grunt) {
                 }
             }
         },
-        jekyll: {
-            options: {                          // Universal options
-                bundleExec: true,
-                src: './'
-            },
-            dist: {                             // Target
-                options: {                        // Target options
-                    dest: '_site',
-                    config: '_config.yml'
-                }
-            },
-            serve: {
+        browserify: {
+            dist: {
                 options: {
-                    serve: true,
-                    dest: '.jekyll',
-                    drafts: true,
-                    future: true
+                    transform: [
+                        ["riotify"],
+                        ["babelify", { "presets": ["es2015"] }]
+                    ]
+                },
+                files: {
+                    // if the source file has an extension of es6 then
+                    // we change the name of the source file accordingly.
+                    // The result file's extension is always .js
+                    "./js/app.js": ["./js-src/app.js"]
                 }
             }
         },
@@ -48,13 +43,13 @@ module.exports = function (grunt) {
                 debounceDelay: 2000
             },
             dist: {
-                files: ['scss/*.scss', '_layouts/*.html', '_config.yml'],
-                tasks: ['sass'],// 'jekyll:serve']
+                files: ['scss/*.scss', '_layouts/*.html', '_config.yml', 'js-src/*'],
+                tasks: ['sass:dist', 'browserify:dist']
             }
         }
     });
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['sass', 'jekyll:serve']);
+    grunt.registerTask('default', ['sass:dist', 'browserify:dist']);
 };
