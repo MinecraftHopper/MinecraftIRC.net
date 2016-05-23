@@ -11,8 +11,10 @@
         this.tags.question.doUpdate();
     }
 
-    displayNext() {
-        var to = $("input.choice:checked", this.root).attr("value");
+    displayNext(_, to) {
+        if (typeof to === 'undefined') {
+            to = $("input.choice:checked", this.root).attr("value");
+        }
         this.log.push(to);
         this.displayQuestion(to);
     }

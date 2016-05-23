@@ -53,7 +53,7 @@ $(function () {
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./question.tag":2,"./questions.tag":3,"./raw.tag":4,"foundation-sites":5,"jquery":6,"riot":7,"what-input":8}],2:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('question', '<h1 class="heading">{opts.question.heading}</h1> <p class="description"><raw content="{opts.question.description}"></raw></p> <h2 class="question-title">{opts.question.question}</h2> <ul class="choices"> <li each="{opts.question.choices}"><input name="choice" class="choice" type="radio" value="{to}" onchange="{onChange}">{text}</li> </ul> <button class="back-button is-hidden" onclick="{parent.displayPrev}">Back</button> <button class="disabled next-button" disabled onclick="{parent.displayNext}">Next</button> <button class="enter-button is-hidden" onclick="{parent.displayEnd}">Enter</button>', '', '', function(opts) {
+module.exports = riot.tag2('question', '<h1 class="heading">{opts.question.heading}</h1> <p class="description"><raw content="{opts.question.description}"></raw></p> <h2 class="question-title"><raw content="{opts.question.question}"></raw></h2> <ul class="choices" show="{!opts.question.renderAsButtons}"> <li each="{opts.question.choices}"><input name="choice" class="choice" type="radio" value="{to}" onchange="{onChange}">{text}</li> </ul> <div show="{opts.question.renderAsButtons}"> <button each="{opts.question.choices}" class="button" onclick="{onCustomButtonClick}" data-to="{to}" data-is-external-link="{isExternalLink}">{text}</button> </div> <div hide="{opts.question.isResolution}"> <button class="back-button is-hidden" onclick="{parent.displayPrev}">Back</button> <button class="disabled next-button" disabled onclick="{parent.displayNext}">Next</button> </div> <button class="enter-button is-hidden" onclick="{parent.displayEnd}">Enter</button>', '', '', function(opts) {
 
     this.onChange = function() {
         if ($("input[type=radio]:checked", this.root).length > 0) {
@@ -67,7 +67,7 @@ module.exports = riot.tag2('question', '<h1 class="heading">{opts.question.headi
     }.bind(this)
 
     this.doUpdate = function() {
-        if (this.opts.question.canEnter) {
+        if (typeof this.opts.question.canEnter !== 'undefined' && this.opts.question.canEnter) {
             $(".next-button, .back-button", this.root).addClass("is-hidden");
             $(".enter-button", this.root).removeClass("is-hidden");
         } else {
@@ -82,6 +82,15 @@ module.exports = riot.tag2('question', '<h1 class="heading">{opts.question.headi
                 $(".next-button", this.root).removeClass("is-hidden");
             }
             this.onChange();
+        }
+    }.bind(this)
+
+    this.onCustomButtonClick = function(e) {
+        var target = $(e.target);
+        if (target.data('is-external-link')) {
+            window.location.href = target.data('to');
+        } else {
+            this.parent.displayNext(null, target.data('to'));
         }
     }.bind(this)
 });
@@ -99,8 +108,10 @@ module.exports = riot.tag2('questions', '<question question="{currentQuestion}">
         this.tags.question.doUpdate();
     }.bind(this)
 
-    this.displayNext = function() {
-        var to = $("input.choice:checked", this.root).attr("value");
+    this.displayNext = function(_, to) {
+        if (typeof to === 'undefined') {
+            to = $("input.choice:checked", this.root).attr("value");
+        }
         this.log.push(to);
         this.displayQuestion(to);
     }.bind(this)

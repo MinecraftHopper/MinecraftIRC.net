@@ -2,12 +2,18 @@
     <h1 class="heading">{ opts.question.heading }</h1>
     <p class="description"><raw content="{ opts.question.description }"></raw></p>
 
-    <h2 class="question-title">{ opts.question.question }</h2>
-    <ul class="choices">
+    <h2 class="question-title"><raw content="{ opts.question.question }"></raw></h2>
+    <ul class="choices" show="{ !opts.question.renderAsButtons }">
         <li each="{ opts.question.choices }"><input name="choice" class="choice" type="radio" value="{ to }" onchange="{ onChange }" />{ text }</li>
     </ul>
-    <button class="back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
-    <button class="disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
+
+    <div show="{ opts.question.renderAsButtons }">
+        <button each="{ opts.question.choices }" class="button" onclick="{ onCustomButtonClick }" data-to="{ to }" data-is-external-link="{ isExternalLink }">{ text }</button>
+    </div>
+    <div hide="{ opts.question.isResolution }">
+        <button class="back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
+        <button class="disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
+    </div>
     <button class="enter-button is-hidden" onclick="{ parent.displayEnd }">Enter</button>
 
     onChange() {
@@ -22,7 +28,7 @@
     }
 
     doUpdate() {
-        if (this.opts.question.canEnter) {
+        if (typeof this.opts.question.canEnter !== 'undefined' && this.opts.question.canEnter) {
             $(".next-button, .back-button", this.root).addClass("is-hidden");
             $(".enter-button", this.root).removeClass("is-hidden");
         } else {
@@ -37,6 +43,15 @@
                 $(".next-button", this.root).removeClass("is-hidden");
             }
             this.onChange();
+        }
+    }
+
+    onCustomButtonClick(e) {
+        var target = $(e.target);
+        if (target.data('is-external-link')) {
+            window.location.href = target.data('to');
+        } else {
+            this.parent.displayNext(null, target.data('to'));
         }
     }
 </question>
