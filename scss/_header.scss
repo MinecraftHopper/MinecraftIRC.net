@@ -6,8 +6,10 @@ header {
     padding: 0;
   }
 
-  .menu a:hover {
-    color: #c9c9c9;
+  .menu {
+    a:focus, a:hover {
+      color: #c9c9c9;
+    }
   }
 
   .top-bar {
