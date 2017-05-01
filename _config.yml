@@ -17,8 +17,6 @@ url: "http://minecraftirc.net" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-collections:
-  - support-articles
 
 exclude:
   - "node_modules"
