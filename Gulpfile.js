@@ -20,9 +20,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('jekyll', () => {
-    const jekyll = child.spawn('bundler', ['exec', 'jekyll', 'build',
-        '--incremental-rebuild'
-    ]);
+    const jekyll = child.spawn('bundler', ['exec', 'jekyll', 'build', '--incremental', '--watch']);
 
     const jekyllLogger = (buffer) => {
         buffer.toString()
@@ -34,8 +32,8 @@ gulp.task('jekyll', () => {
     jekyll.stderr.on('data', jekyllLogger);
 });
 
-gulp.task('jekyll', () => {
-    const jekyll = child.spawn('jekyll', ['build']);
+gulp.task('jekyll-build', () => {
+    const jekyll = child.spawn('bundler', ['exec', 'jekyll', 'build']);
 
     const jekyllLogger = (buffer) => {
         buffer.toString()
@@ -56,7 +54,7 @@ gulp.task('serve', () => {
         }
     });
 
-    gulp.watch(cssFiles, ['css']);
+    gulp.watch('scss/*.scss', ['css']);
 });
 
 gulp.task('default', ['css', 'jekyll', 'serve']);
