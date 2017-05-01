@@ -6,7 +6,6 @@ body {
   max-width: rem-calc(1080px);
   margin: auto;
   padding: 0 20px;
-  min-height: 95%;
   min-height: calc(100% - 220px); // Minus top and bottom
 }
 
