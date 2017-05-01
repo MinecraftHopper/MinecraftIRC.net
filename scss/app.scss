@@ -10,7 +10,7 @@ $menu-item-background-active: #4a4a4a;
 $topbar-padding: 1rem;
 $dropdownmenu-arrow-color: white;
 
-@include foundation-everything;
+@include foundation-everything(true);
 
 @import "base";
 @import "header";
