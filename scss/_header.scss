@@ -1,6 +1,12 @@
 header {
   background-color: #4a4a4a;
 
+  .site-title a {
+    @include breakpoint(small only) {
+      padding: 0;
+    }
+  }
+
   li, a, .menu-text {
     color: white;
     padding: 0;
@@ -16,15 +22,18 @@ header {
     max-width: rem-calc(1100px);
     margin: auto;
     font-size: 1.25rem;
+    padding: 1rem;
   }
 
   .menu-button {
     text-align: right;
     color: white;
+  }
 
-    @include breakpoint (small only) {
-      padding-top: 7px;
-    }
+  .menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .menu > .is-submenu-item a {
@@ -33,6 +42,15 @@ header {
 
     &:hover {
       color: #808080;
+    }
+  }
+
+  .menu:not(.submenu) > li.is-dropdown-submenu-parent > a {
+    padding-left: 0;
+    padding-top: 0.8rem;
+
+    @include breakpoint (medium up) {
+      padding: 0.7rem 1.5rem 0.7rem 1rem;
     }
   }
 
@@ -45,10 +63,15 @@ header {
     letter-spacing: -0.1px;
   }
 
-  .top-bar-left, .top-bar-right {
-    @include breakpoint (small only) {
-      width: inherit;
-      padding-top: 5px;
+  .top-bar-left, .menu-button {
+    flex: 0 1 auto !important;
+  }
+
+  .top-bar-right {
+    padding: 10px 0 0;
+
+    @include breakpoint (medium up) {
+      padding: 0;
     }
   }
 }

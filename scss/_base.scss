@@ -10,8 +10,12 @@ body {
 .master-container {
   max-width: rem-calc(1080px);
   margin: auto;
-  padding: 0 20px;
+  padding: 0 0.8rem;
   min-height: calc(100vh - 220px); // Minus top and bottom
+
+  @include breakpoint (medium up) {
+    padding: 0 1.75rem;
+  }
 }
 
 li.list-heading {
