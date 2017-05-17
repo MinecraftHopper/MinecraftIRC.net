@@ -1,9 +1,11 @@
-const child = require('child_process');
-const browserSync = require('browser-sync').create();
+import child from 'child_process';
+import {create as bsCreate} from 'browser-sync';
+const browserSync = bsCreate();
 
-const gulp = require('gulp');
-const gutil = require('gulp-util');
-const sass = require('gulp-sass');
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import sass from 'gulp-sass';
+import webpack from 'webpack';
 
 const siteRoot = '_site';
 const cssFiles = 'scss/app.scss';
