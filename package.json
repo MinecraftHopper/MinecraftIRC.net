@@ -8,8 +8,7 @@
     "jquery": "^3.2.1",
     "normalize": "^0.3.1",
     "normalize-scss": "^4.2.1",
-    "riot": "^3.5.0",
-    "riot-webpack": "^0.0.1"
+    "riot": "^3.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -21,6 +20,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
     "riot-tag-loader": "^1.0.0",
+    "riot-webpack": "^0.0.1",
     "webpack": "^2.5.1"
   },
   "scripts": {
