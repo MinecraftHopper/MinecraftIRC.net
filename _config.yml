@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   MinecraftIRC.net is the website for \#minecraft and \#minecrafthelp, the
   two biggest Minecraft IRC channels.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://minecraftirc.net" # the base hostname & protocol for your site
+url: "https://minecraftirc.net" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
