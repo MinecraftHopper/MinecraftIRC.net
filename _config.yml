@@ -27,3 +27,7 @@ exclude:
   - "yarn.lock"
   - "scss"
   - "js-src"
+
+include:
+  - "css"
+  - "js"
