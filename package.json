@@ -21,6 +21,7 @@
     "gulp-util": "^3.0.8",
     "riot-tag-loader": "^1.0.0",
     "riot-webpack": "^0.0.1",
+    "run-sequence": "^1.2.2",
     "webpack": "^2.5.1"
   },
   "scripts": {

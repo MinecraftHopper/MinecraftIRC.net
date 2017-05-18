@@ -4,6 +4,7 @@ const browserSync = bsCreate();
 
 import gulp from 'gulp';
 import gutil from 'gulp-util';
+import runSeq from 'run-sequence';
 import sass from 'gulp-sass';
 import webpack from 'webpack';
 
@@ -11,7 +12,7 @@ const siteRoot = '_site';
 const cssFiles = 'scss/app.scss';
 
 gulp.task('css', () => {
-    gulp.src(cssFiles)
+    return gulp.src(cssFiles)
         .pipe(sass({
             "includePaths": [
                 './node_modules/foundation-sites/scss',
@@ -22,7 +23,7 @@ gulp.task('css', () => {
 });
 
 gulp.task("webpack", (cb) => {
-    webpack(require("./webpack.config.js")).run((err, stats) => {
+    return webpack(require("./webpack.config.js")).run((err, stats) => {
         if (err) { throw new gutil.PluginError('webpack-build', err); }
         gutil.log('[webpack-build]', stats.toString({
             colors: true
@@ -55,6 +56,8 @@ gulp.task('jekyll-build', () => {
 
     jekyll.stdout.on('data', jekyllLogger);
     jekyll.stderr.on('data', jekyllLogger);
+
+    return jekyll;
 });
 
 gulp.task('serve', () => {
@@ -71,4 +74,10 @@ gulp.task('serve', () => {
 });
 
 gulp.task('default', ['css', 'webpack', 'jekyll', 'serve']);
-gulp.task('build', ['css', 'webpack', 'jekyll-build']);
+gulp.task('build', (cb) => {
+    runSeq(
+        ['css', 'webpack'],
+        'jekyll-build',
+        cb
+    );
+});
