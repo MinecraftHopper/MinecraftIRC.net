@@ -10,7 +10,7 @@
     <div show="{ opts.question.renderAsButtons }">
         <button each="{ opts.question.choices }" class="button" onclick="{ onCustomButtonClick }" data-to="{ to }" data-is-external-link="{ isExternalLink }">{ text }</button>
     </div>
-    <div hide="{ opts.question.isResolution }">
+    <div class="buttons-list" hide="{ opts.question.isResolution }">
         <button class="button back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
         <button class="button disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
     </div>
