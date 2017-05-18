@@ -2,7 +2,7 @@
   "name": "minecraftirc",
   "version": "1.0.0",
   "description": "",
-  "main": "Gulpfile.js",
+  "main": "gulpfile.babel.js",
   "dependencies": {
     "foundation-sites": "^6.3.1",
     "jquery": "^3.2.1",
