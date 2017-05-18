@@ -11,10 +11,10 @@
         <button each="{ opts.question.choices }" class="button" onclick="{ onCustomButtonClick }" data-to="{ to }" data-is-external-link="{ isExternalLink }">{ text }</button>
     </div>
     <div hide="{ opts.question.isResolution }">
-        <button class="back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
-        <button class="disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
+        <button class="button back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
+        <button class="button disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
     </div>
-    <button class="enter-button is-hidden" onclick="{ parent.displayEnd }">Enter</button>
+    <button class="button enter-button is-hidden" onclick="{ parent.displayEnd }">Enter</button>
 
     <script>
     onChange() {

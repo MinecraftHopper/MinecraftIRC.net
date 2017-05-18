@@ -8,7 +8,7 @@ questions {
       }
     }
 
-    .back-button, .next-button, .enter-button {
+    .button {
       @include button;
 
       &.disabled {
