@@ -1,8 +1,8 @@
 <question>
-    <h1 class="heading">{ opts.question.heading }</h1>
-    <p class="description"><raw content="{ opts.question.description }"></raw></p>
+    <h1 class="heading" show="{ opts.question.heading }">{ opts.question.heading }</h1>
+    <p class="description" show="{ opts.question.description }"><raw content="{ opts.question.description }"></raw></p>
 
-    <h2 class="question-title"><raw content="{ opts.question.question }"></raw></h2>
+    <h2 class="question-title" show="{ opts.question.question }"><raw content="{ opts.question.question }"></raw></h2>
     <ul class="choices" show="{ !opts.question.renderAsButtons }">
         <li each="{ opts.question.choices }"><input name="choice" id="choice[{to}]" class="choice" type="radio" value="{ to }" onchange="{ onChange }" /><label for="choice[{to}]">{ text }</label></li>
     </ul>
