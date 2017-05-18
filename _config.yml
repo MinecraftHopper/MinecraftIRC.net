@@ -20,6 +20,7 @@ markdown: kramdown
 exclude:
   - "node_modules"
   - "gulpfile.babel.js"
+  - "webpack.config.js"
   - "package.json"
   - "Gemfile"
   - "Gemfile.lock"
