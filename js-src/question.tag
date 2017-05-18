@@ -4,7 +4,7 @@
 
     <h2 class="question-title"><raw content="{ opts.question.question }"></raw></h2>
     <ul class="choices" show="{ !opts.question.renderAsButtons }">
-        <li each="{ opts.question.choices }"><input name="choice" class="choice" type="radio" value="{ to }" onchange="{ onChange }" />{ text }</li>
+        <li each="{ opts.question.choices }"><input name="choice" id="choice[{to}]" class="choice" type="radio" value="{ to }" onchange="{ onChange }" /><label for="choice[{to}]">{ text }</label></li>
     </ul>
 
     <div show="{ opts.question.renderAsButtons }">
