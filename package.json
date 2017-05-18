@@ -5,15 +5,23 @@
   "main": "Gulpfile.js",
   "dependencies": {
     "foundation-sites": "^6.3.1",
+    "jquery": "^3.2.1",
     "normalize": "^0.3.1",
-    "normalize-scss": "^4.2.1"
+    "normalize-scss": "^4.2.1",
+    "riot": "^3.5.0",
+    "riot-webpack": "^0.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.18.8",
     "child_process": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "riot-tag-loader": "^1.0.0",
+    "webpack": "^2.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

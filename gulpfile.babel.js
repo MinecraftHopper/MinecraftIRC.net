@@ -21,6 +21,16 @@ gulp.task('css', () => {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task("webpack", (cb) => {
+    webpack(require("./webpack.config.js")).run((err, stats) => {
+        if (err) { throw new gutil.PluginError('webpack-build', err); }
+        gutil.log('[webpack-build]', stats.toString({
+            colors: true
+        }));
+        cb();
+    });
+});
+
 gulp.task('jekyll', () => {
     const jekyll = child.spawn('bundler', ['exec', 'jekyll', 'build', '--incremental', '--watch']);
 
@@ -57,7 +67,8 @@ gulp.task('serve', () => {
     });
 
     gulp.watch('scss/*.scss', ['css']);
+    gulp.watch('js-src/*.*', ['webpack']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
-gulp.task('build', ['css', 'jekyll-build']);
+gulp.task('default', ['css', 'webpack', 'jekyll', 'serve']);
+gulp.task('build', ['css', 'webpack', 'jekyll-build']);
