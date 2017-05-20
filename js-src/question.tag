@@ -14,8 +14,8 @@
         <button class="button back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
         <button class="button disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
         <button class="button start-over-button is-hidden" onclick="{ parent.displayStartOver }">Start Over</button>
+        <button class="button enter-button is-hidden" onclick="{ () => parent.displayEnd(opts.question.exitTo) }">Enter { opts.question.exitText }</button>
     </div>
-    <button class="button enter-button is-hidden" onclick="{ () => parent.displayEnd(opts.question.exitTo) }">Enter { opts.question.exitText }</button>
 
     <script>
     onChange() {
