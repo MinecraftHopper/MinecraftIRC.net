@@ -2,7 +2,7 @@
   "questions": {
     "intro": {
       "heading": "Welcome to #minecrafthelp!",
-      "description": "We'll ask you a few questions to help you figure out whether you need to use our service. Chances are you don't at all! Fill in the quick questionnaire below to get help instantly without needing to wait for a volunteer.",
+      "description": "To help you get to the right place, please answer a few questions below.",
       "question": "What can we help you with today?",
       "choices": [
         {
@@ -18,14 +18,13 @@
           "to": "in-game-questions"
         },
         {
-          "text": "I'm not sure",
-          "to": "not-sure"
+          "text": "Something Else",
+          "to": "technical-issues.ready"
         }
       ]
     },
     "account-issues": {
-      "heading": "Account Issues",
-      "description": "While we are unable to help with accounts issues (we are not Mojang), you may still want to look at the resources below.",
+      "description": "While we are unable to help with accounts issues (we are not Mojang), we can still help you find the right place to ask for help.",
       "question": "What account issues are you having?",
       "choices": [
         {
@@ -39,27 +38,104 @@
         {
           "text": "Account was hacked",
           "to": "account-issues.account-hacked"
+        },
+        {
+          "text": "Issues with Migration",
+          "to": "account-issues.migration-issues"
+        },
+        {
+          "text": "Something else",
+          "to": "account-issues.ready"
+        }
+      ]
+    },
+    "account-issues.account-hacked": {
+      "heading": "",
+      "description": "If you think your account was hacked, please see <a href=\"https://help.mojang.com/customer/portal/articles/361483\">this Mojang Support article</a> for information on how to get your account back.<br><br>If you have read the article above and would like to speak to our volunteers, please continue below:",
+      "choices": [
+        {
+          "text": "I have read the article and would like more assistance",
+          "to": "account-issues.ready"
+        }
+      ]
+    },
+    "account-issues.migration-issues": {
+      "heading": "",
+      "description": "If you are having issues with migration, please see <a href=\"https://help.mojang.com/customer/portal/articles/438361\">this Mojang Support article</a> for more information on how to get help.<br>NOTE: If you had a Minecraft.net account and your account was not premium (i.e. paid), your username has been lost - please purchase a new copy of Minecraft instead.<br><br>If you have read the article above and would like to speak to our volunteers, please continue below:",
+      "choices": [
+        {
+          "text": "I have read the article and would like more assistance",
+          "to": "account-issues.ready"
+        }
+      ]
+    },
+    "account-issues.payment-issues": {
+      "heading": "",
+      "description": "If you are having payment issues, please see <a href=\"https://help.mojang.com/customer/en/portal/articles/417071-i-can%E2%80%99t-make-a-purchase\">this Mojang Support article</a> for information on common issues.<br><br>If you have read the article above and would like to speak to our volunteers, please continue below:",
+      "choices": [
+        {
+          "text": "I have read the article and would like more assistance",
+          "to": "account-issues.ready"
         }
       ]
     },
     "account-issues.logged-in-before": {
       "heading": "",
       "description": "",
-      "question": "Have you been able to log into Minecraft before?",
+      "question": "Have you been able to log into Minecraft on this computer before?",
       "choices": [
         {
           "text": "Yes",
-          "to": "account-issues.logged-in-before"
+          "to": "account-issues.is-throttled"
         },
         {
           "text": "No",
-          "to": "account-issues.payment-issues"
+          "to": "technical-issues.ready"
         }
       ]
     },
+    "account-issues.is-throttled": {
+      "heading": "",
+      "description": "Most likely, <strong>your login is being throttled</strong>. This can happen if you have too many failed login attempts. Wait <strong>one</strong> hour, <a href=\"https://account.mojang.com/password\">reset your password</a>, then try logging into Minecraft.<br>If that doesn't work, come back here and select \"No\" when you answer this question.",
+      "choices": null
+    },
+    "account-issues.ready": {
+      "heading": "Ready to go!",
+      "description": "You're now ready to enter the #minecrafthelp support chat.<br>Please note that <br>:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li><strong>we are not Mojang</strong> and <strong>we cannot solve your account problems</strong>. You should always <a href=\"help.mojang.com/customer/portal/emails/new\">email Mojang Support</a> for any account issues you have.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "exitTo": ".chat-iframe",
+      "exitText": "#minecrafthelp"
+    },
+    "in-game-questions": {
+      "description": "What kind of in-game issues are you having? (NOTE: <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, the <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> and <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a> subreddit will probably be more helpful)",
+      "choices": [
+        {
+          "text": "Launching the Game",
+          "to": "technical-issues.is-modded"
+        },
+        {
+          "text": "Command-block issues",
+          "to": "in-game-questions.command-blocks"
+        },
+        {
+          "text": "Something else",
+          "to": "in-game-questions.end"
+        }
+      ]
+    },
+    "in-game-questions.command-blocks": {
+      "description": "While we are unable to offer command block help, our friends at #commandblock are always here to help. Please note that they, too, are run by volunteers so please be patient while waiting for a response.",
+      "exitTo": ".cmdblocks-chat-iframe",
+      "exitText": "#commandblocks"
+    },
+    "in-game-questions.ready": {
+      "heading": "Ready to go!",
+      "description": "You're now ready to enter the the #minecrafthelp support chat. <br>Please note that <br>:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li>If you're not getting a response, try <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> or <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a>.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "exitTo": ".chat-iframe",
+      "exitText": "#minecrafthelp"
+    },
     "technical-issues.is-pc": {
       "heading": "",
-      "description": "Are you looking for help with Minecraft for Windows/Mac/Linux? (Excluding Windows 10 Edition)",
+      "question": "Are you looking for help with Minecraft for Windows/Mac/Linux? (Excluding Windows 10 Edition)",
       "choices": [
         {
           "text": "Yes",
@@ -73,12 +149,13 @@
     },
     "technical-issues.end-pc": {
       "heading": "",
-      "description": "Unfortunately, we do not offer support for other Minecraft versions. You can try the resources below:<br><ul><li>Minecraft PE/Windows 10 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support\">http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support</a></li><li>Minecraft: Xbox 360 Edition: <a href=\"http://www.minecraftforum.net/forum/230-mcx360-help-support/\">http://www.minecraftforum.net/forum/230-mcx360-help-support/</a></li><li>Minecraft: Xbox One Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition\">http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition</a></li><li>Minecraft: PS3 Edition: <a href=\"http://www.minecraftforum.net/forum/331-ps3-edition-support/\">http://www.minecraftforum.net/forum/331-ps3-edition-support/</a></li><li>Minecraft: PS4 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition\">http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition</a></li><li>Minecraft: Playstation Vita Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-vita\">http://www.minecraftforum.net/forums/support/minecraft-playstation-vita</a></li></ul>",
+      "description": "Unfortunately, we do not offer support for other Minecraft versions. You can try the resources below:<br><br><ul><li>Minecraft PE/Windows 10 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support\">http://www.minecraftforum.net/forums/support/minecraft-pocket-edition-support</a></li><li>Minecraft: Xbox 360 Edition: <a href=\"http://www.minecraftforum.net/forum/230-mcx360-help-support/\">http://www.minecraftforum.net/forum/230-mcx360-help-support/</a></li><li>Minecraft: Xbox One Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition\">http://www.minecraftforum.net/forums/support/minecraft-xbox-one-edition</a></li><li>Minecraft: PS3 Edition: <a href=\"http://www.minecraftforum.net/forum/331-ps3-edition-support/\">http://www.minecraftforum.net/forum/331-ps3-edition-support/</a></li><li>Minecraft: PS4 Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition\">http://www.minecraftforum.net/forums/support/minecraft-playstation-4-edition</a></li><li>Minecraft: Playstation Vita Edition: <a href=\"http://www.minecraftforum.net/forums/support/minecraft-playstation-vita\">http://www.minecraftforum.net/forums/support/minecraft-playstation-vita</a></li></ul>",
       "choices": null
     },
     "technical-issues.is-modded": {
       "heading": "",
-      "description": "Is your Minecraft modded? Note that server plugins also counts as mods.",
+      "description": "",
+      "question": "Is your Minecraft modded? Note that server plugins also counts as mods.",
       "choices": [
         {
           "text": "Yes",
@@ -87,18 +164,23 @@
         {
           "text": "No",
           "to": "technical-issues.ready"
+        },
+        {
+          "text": "I don't know",
+          "to": "technical-issues.ready"
         }
       ]
     },
     "technical-issues.end-modded": {
       "heading": "",
-      "description": "We do not offer support for modded clients or servers. For help with mods, contact the mod's author on the mod's thread (usually on Minecraft Forums). Also, try the <a href=\"http://www.minecraftforum.net/forums/support/modded-client-support\">Modded Client Support</a> section.<br/><br/>If you would like help with removing all mods, see <a href=\"http://hopper.minecraft.net/help/guides/reinstalling-minecraft/\">this guide</a> for more information. You'll need to remove all mods before requesting support.",
+      "description": "We do not offer support for modded clients or servers. For help with mods, contact the mod's author on the mod's thread (usually on Minecraft Forums). Also, try the <a href=\"http://www.minecraftforum.net/forums/support/modded-client-support\">Modded Client Support</a> section.<br/><br/>If you would like help with removing all mods, see <a href=\"http://hopper.minecraft.net/help/guides/reinstalling-minecraft/\">this guide</a> for more information. You'll need to remove all mods before requesting support.<br><br>Feel free to come back if the issue persists after uninstalling Minecraft.",
       "choices": null
     },
     "technical-issues.ready": {
       "heading": "Ready to go!",
-      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs/dxdiag logs ready</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
-      "canEnter": true
+      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs/dxdiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "exitTo": ".chat-iframe",
+      "exitText": "#minecrafthelp"
     }
   },
   "startQuestion": "intro"
