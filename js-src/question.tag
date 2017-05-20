@@ -31,7 +31,7 @@
 
     doUpdate() {
         if (typeof this.opts.question.exitTo !== 'undefined') {
-            $(".next-button, .back-button", this.root).addClass("is-hidden");
+            $(".next-button, .back-button, .start-over-button", this.root).addClass("is-hidden");
             $(".enter-button", this.root).removeClass("is-hidden");
         } else {
             if (this.parent.log.length > 1) {
