@@ -25,6 +25,11 @@
             this.displayQuestion(this.log[this.log.length - 1]);
         }
 
+        displayStartOver() {
+            this.log = [];
+            this.displayQuestion(self.config.startQuestion);
+        }
+
         displayEnd() {
             $("question", this.root).addClass("is-hidden");
             $(self.config.onExit).removeClass("is-hidden");

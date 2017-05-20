@@ -13,6 +13,7 @@
     <div class="buttons-list" hide="{ opts.question.isResolution }">
         <button class="button back-button is-hidden" onclick="{ parent.displayPrev }">Back</button>
         <button class="button disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
+        <button class="button start-over-button is-hidden" onclick="{ parent.displayStartOver }">Start Over</button>
     </div>
     <button class="button enter-button is-hidden" onclick="{ parent.displayEnd }">Enter</button>
 
@@ -35,8 +36,10 @@
         } else {
             if (this.parent.log.length > 1) {
                 $(".back-button", this.root).removeClass("is-hidden");
+                $(".start-over-button", this.root).removeClass("is-hidden");
             } else {
                 $(".back-button", this.root).addClass("is-hidden");
+                $(".start-over-button", this.root).addClass("is-hidden");
             }
             if (opts.question.choices === null) {
                 $(".next-button", this.root).addClass("is-hidden");
