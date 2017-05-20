@@ -15,7 +15,7 @@
         <button class="button disabled next-button" disabled onclick="{ parent.displayNext }">Next</button>
         <button class="button start-over-button is-hidden" onclick="{ parent.displayStartOver }">Start Over</button>
     </div>
-    <button class="button enter-button is-hidden" onclick="{ parent.displayEnd }">Enter</button>
+    <button class="button enter-button is-hidden" onclick="{ () => parent.displayEnd(opts.question.exitTo) }">Enter</button>
 
     <script>
     onChange() {
@@ -30,7 +30,7 @@
     }
 
     doUpdate() {
-        if (typeof this.opts.question.canEnter !== 'undefined' && this.opts.question.canEnter) {
+        if (typeof this.opts.question.exitTo !== 'undefined') {
             $(".next-button, .back-button", this.root).addClass("is-hidden");
             $(".enter-button", this.root).removeClass("is-hidden");
         } else {

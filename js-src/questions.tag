@@ -30,9 +30,9 @@
             this.displayQuestion(self.config.startQuestion);
         }
 
-        displayEnd() {
+        displayEnd(exitTo) {
             $("question", this.root).addClass("is-hidden");
-            $(self.config.onExit).removeClass("is-hidden");
+            $(exitTo).removeClass("is-hidden");
         }
 
         $.getJSON(opts.source, function (obj) {

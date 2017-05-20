@@ -101,6 +101,5 @@
       "canEnter": true
     }
   },
-  "onExit": ".chat-iframe",
   "startQuestion": "intro"
 }
