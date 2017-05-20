@@ -2,13 +2,21 @@ questions {
   question {
     .choices {
       list-style: none;
+      margin-bottom: 0;
+
+      li + li {
+        margin-top: 10px;
+      }
 
       input {
         margin-right: 15px;
+        margin-bottom: 0;
       }
     }
 
     .buttons-list {
+      margin-top: 15px;
+
       button + button {
         margin-left: 5px;
       }
@@ -16,6 +24,7 @@ questions {
 
     .button {
       @include button;
+      margin-bottom: 0;
 
       &.disabled {
         @include button-disabled;
