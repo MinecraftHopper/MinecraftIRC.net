@@ -106,7 +106,8 @@
       "exitText": "#minecrafthelp"
     },
     "in-game-questions": {
-      "description": "What kind of in-game issues are you having? (NOTE: <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, the <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> and <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a> subreddit will probably be more helpful)",
+      "description": "Note: <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, the <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> and <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a> subreddit will probably be more helpful than us.",
+      "question": "What kind of in-game issues are you having?",
       "choices": [
         {
           "text": "Launching the Game",
