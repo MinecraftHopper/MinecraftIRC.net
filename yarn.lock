@@ -2827,9 +2827,9 @@ normalize-path@^2.0.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
-normalize-scss@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-4.2.1.tgz#910b1a589b1d17446f7748c16682f283fcf34c26"
+normalize-scss@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.0.tgz#92eaac6554cc376336c06682a0d6a2099bbb0889"
 
 normalize@^0.3.1:
   version "0.3.1"
