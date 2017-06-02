@@ -18,45 +18,45 @@
     </div>
 
     <script>
-    onChange() {
-        if ($("input[type=radio]:checked", this.root).length > 0) {
-            $(".next-button", this.root).prop("disabled", false);
-            $(".next-button", this.root).removeClass("disabled");
-        } else {
-            $(".next-button", this.root).prop("disabled", true);
-            $(".next-button", this.root).addClass("disabled");
-        }
-        this.update();
-    }
-
-    doUpdate() {
-        if (typeof this.opts.question.exitTo !== 'undefined') {
-            $(".next-button, .back-button, .start-over-button", this.root).addClass("is-hidden");
-            $(".enter-button", this.root).removeClass("is-hidden");
-        } else {
-            if (this.parent.log.length > 1) {
-                $(".back-button", this.root).removeClass("is-hidden");
-                $(".start-over-button", this.root).removeClass("is-hidden");
+        onChange() {
+            if ($("input[type=radio]:checked", this.root).length > 0) {
+                $(".next-button", this.root).prop("disabled", false);
+                $(".next-button", this.root).removeClass("disabled");
             } else {
-                $(".back-button", this.root).addClass("is-hidden");
-                $(".start-over-button", this.root).addClass("is-hidden");
+                $(".next-button", this.root).prop("disabled", true);
+                $(".next-button", this.root).addClass("disabled");
             }
-            if (opts.question.choices === null) {
-                $(".next-button", this.root).addClass("is-hidden");
-            } else {
-                $(".next-button", this.root).removeClass("is-hidden");
-            }
-            this.onChange();
+            this.update();
         }
-    }
 
-    onCustomButtonClick(e) {
-        var target = $(e.target);
-        if (target.data('is-external-link')) {
-            window.location.href = target.data('to');
-        } else {
-            this.parent.displayNext(null, target.data('to'));
+        doUpdate() {
+            if (typeof this.opts.question.exitTo !== 'undefined') {
+                $(".next-button, .back-button, .start-over-button", this.root).addClass("is-hidden");
+                $(".enter-button", this.root).removeClass("is-hidden");
+            } else {
+                if (this.parent.log.length > 1) {
+                    $(".back-button", this.root).removeClass("is-hidden");
+                    $(".start-over-button", this.root).removeClass("is-hidden");
+                } else {
+                    $(".back-button", this.root).addClass("is-hidden");
+                    $(".start-over-button", this.root).addClass("is-hidden");
+                }
+                if (opts.question.choices === null) {
+                    $(".next-button", this.root).addClass("is-hidden");
+                } else {
+                    $(".next-button", this.root).removeClass("is-hidden");
+                }
+                this.onChange();
+            }
         }
-    }
+
+        onCustomButtonClick(e) {
+            var target = $(e.target);
+            if (target.data('is-external-link')) {
+                window.location.href = target.data('to');
+            } else {
+                this.parent.displayNext(null, target.data('to'));
+            }
+        }
     </script>
 </question>
