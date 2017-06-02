@@ -13,6 +13,8 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015-riot": "^1.1.0",
     "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.18.8",
     "child_process": "^1.0.2",
