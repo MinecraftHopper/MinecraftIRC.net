@@ -180,7 +180,7 @@
     },
     "technical-issues.ready": {
       "heading": "Ready to go!",
-      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs/dxdiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs / DxDiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
       "exitText": "#minecrafthelp"
     }
