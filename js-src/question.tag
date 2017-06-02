@@ -4,7 +4,7 @@
 
     <h2 class="question-title" show="{ opts.question.question }"><raw content="{ opts.question.question }"></raw></h2>
     <ul class="choices" show="{ !opts.question.renderAsButtons }">
-        <li each="{ opts.question.choices }"><input name="choice" id="choice[{to}]" class="choice" type="radio" value="{ to }" onchange="{ onChange }" /><label for="choice[{to}]">{ text }</label></li>
+        <li each="{ opts.question.choices }"><input name="choice" id="choice[{ slug(text) }]" class="choice" type="radio" value="{ to }" onchange="{ onChange }" /><label for="choice[{ slug(text) }]">{ text }</label></li>
     </ul>
 
     <div show="{ opts.question.renderAsButtons }">
@@ -18,6 +18,18 @@
     </div>
 
     <script>
+        import slug from 'slug';
+
+        slug.defaults.modes['pretty'] = {
+            replacement: '-',
+            symbols: true,
+            remove: /[.]/g,
+            lower: true,
+            charmap: slug.charmap,
+            multicharmap: slug.multicharmap
+        };
+        this.slug = slug;
+
         onChange() {
             if ($("input[type=radio]:checked", this.root).length > 0) {
                 $(".next-button", this.root).prop("disabled", false);
