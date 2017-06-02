@@ -25,7 +25,7 @@ questions {
     .buttons-list {
       margin-top: 15px;
 
-      button + button {
+      button:not(.is-hidden) + button:not(.is-hidden) {
         margin-left: 5px;
       }
     }
