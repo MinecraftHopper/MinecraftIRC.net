@@ -11,10 +11,15 @@ body {
   max-width: rem-calc(1080px);
   margin: auto;
   padding: 0 0.8rem;
-  min-height: calc(100vh - 220px); // Minus top and bottom
+  min-height: calc(100vh - 187px); // Minus top and bottom
 
   @include breakpoint (medium up) {
     padding: 0 1.75rem;
+    min-height: calc(100vh - 209px);
+  }
+
+  @include breakpoint (large up) {
+    min-height: calc(100vh - 229px);
   }
 }
 
