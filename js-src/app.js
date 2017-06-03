@@ -8,8 +8,6 @@ import 'foundation-sites';
 
 import riot from "riot";
 import questions from "./questions.tag";
-import question from "./question.tag";
-import raw from "./raw.tag";
 
 
 (function(window, $) {

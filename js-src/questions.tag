@@ -11,6 +11,7 @@
 
     <script>
         import {isMobile} from './util.js';
+        import question from "./question.tag";
 
         this.log = [];
         this.currentQuestion = {};

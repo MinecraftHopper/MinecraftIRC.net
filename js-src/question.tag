@@ -19,6 +19,7 @@
 
     <script>
         import slug from 'slug';
+        import raw from "./raw.tag";
 
         slug.defaults.modes['pretty'] = {
             replacement: '-',
