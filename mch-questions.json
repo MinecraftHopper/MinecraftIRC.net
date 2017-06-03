@@ -132,7 +132,7 @@
     },
     "account-issues.ready": {
       "heading": "Ready to go!",
-      "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li><strong>We are not Mojang</strong> and <strong>we cannot solve your account problems over the chat</strong> - however we'll try to give you advice on what to do.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li><strong>We are not Mojang</strong> and <strong>we cannot solve your account problems over the chat</strong> - however we'll try to give you advice on what to do.</li><li><strong>Do not disclose login details into the chat</strong> - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
       "exitText": "#minecrafthelp"
     },
