@@ -29,7 +29,11 @@
       "choices": [
         {
           "text": "Unable to log into Minecraft",
-          "to": "account-issues.logged-in-before"
+          "to": "account-issues.unable-log-in.message"
+        },
+        {
+          "text": "Only able to play demo mode",
+          "to": "account-issues.demo-mode"
         },
         {
           "text": "Payment issues",
@@ -49,9 +53,52 @@
         }
       ]
     },
+    "account-issues.unable-log-in.message": {
+      "question": "What is the error message shown to you?",
+      "choices": [
+        {
+          "text": "Invalid username or password",
+          "to": "account-issues.unable-log-in.logged-in-before"
+        },
+        {
+          "text": "Could not connect to server",
+          "to": "technical-issues.ready"
+        }
+      ]
+    },
+    "account-issues.unable-log-in.logged-in-before": {
+      "heading": "",
+      "description": "",
+      "question": "Have you been able to log into Minecraft on this computer before?",
+      "choices": [
+        {
+          "text": "Yes",
+          "to": "account-issues.is-throttled"
+        },
+        {
+          "text": "No",
+          "to": "technical-issues.ready"
+        }
+      ]
+    },
+    "account-issues.unable-log-in.is-throttled": {
+      "heading": "",
+      "description": "Most likely, <strong>your login is being throttled</strong>. This can happen if you have too many failed login attempts. Wait <strong>one</strong> hour, <a href=\"https://account.mojang.com/password\">reset your password</a>, then try logging into Minecraft.<br>If that doesn't work, come back here and select \"No\" when you answer this question.",
+      "choices": null
+    },
     "account-issues.account-hacked": {
       "heading": "",
       "description": "If you think your account was hacked, please see <a href=\"https://help.mojang.com/customer/portal/articles/361483\">this Mojang Support article</a> for information on how to get your account back.<br><br>If you have read the article above and would like to speak to our volunteers, please continue below:",
+      "choices": [
+        {
+          "text": "I have read the article and would like more assistance",
+          "to": "account-issues.ready"
+        }
+      ]
+    },
+    "account-issues.demo-mode": {
+      "heading": "",
+      "description": "If you are only able to play demo mode, most likely <strong>you have logged into the wrong Mojang account</strong>. Check your email address for any misspellings, and try again.<br>Other causes include:<ol><li><strong>Forgetting to set a profile name</strong> (<a href=\"https://account.mojang.com/me\">you can do so here</a>)</li><li><strong>Forgetting to migrate your old Minecraft.net account</strong> (<a href=\"https://help.mojang.com/customer/portal/articles/438361\">click here for help with migration</a>)</li></ol>For more information on how to fix this problem, please see <a href=\"https://help.mojang.com/customer/portal/articles/1218766\">this Mojang Support article</a> for information on how to fix your account.<br><br>If you have read the article above and would like to speak to our volunteers, please continue below:",
       "choices": [
         {
           "text": "I have read the article and would like more assistance",
@@ -78,26 +125,6 @@
           "to": "account-issues.ready"
         }
       ]
-    },
-    "account-issues.logged-in-before": {
-      "heading": "",
-      "description": "",
-      "question": "Have you been able to log into Minecraft on this computer before?",
-      "choices": [
-        {
-          "text": "Yes",
-          "to": "account-issues.is-throttled"
-        },
-        {
-          "text": "No",
-          "to": "technical-issues.ready"
-        }
-      ]
-    },
-    "account-issues.is-throttled": {
-      "heading": "",
-      "description": "Most likely, <strong>your login is being throttled</strong>. This can happen if you have too many failed login attempts. Wait <strong>one</strong> hour, <a href=\"https://account.mojang.com/password\">reset your password</a>, then try logging into Minecraft.<br>If that doesn't work, come back here and select \"No\" when you answer this question.",
-      "choices": null
     },
     "account-issues.ready": {
       "heading": "Ready to go!",
