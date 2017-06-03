@@ -73,7 +73,7 @@
       "choices": [
         {
           "text": "Yes",
-          "to": "account-issues.is-throttled"
+          "to": "account-issues.unable-log-in.is-throttled"
         },
         {
           "text": "No",
