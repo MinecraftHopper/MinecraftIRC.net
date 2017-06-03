@@ -62,7 +62,8 @@
 
                     self.log.push(self.config.startQuestion);
                     $(".buttons-list", self.root).removeClass("is-hidden");
-                    self.displayQuestion(self.config.startQuestion);
+                    ga('send', 'event', 'mch-landing', 'enter');
+                    self.displayQuestion(self.config.startQuestion, false);
                 });
             }
         })
