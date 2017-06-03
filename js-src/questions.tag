@@ -47,13 +47,11 @@
 
         this.on('mount', () => {
             if (isMobile()) {
-                console.log(isMobile());
                 $("question", self.root).addClass("is-hidden");
                 $(".is-mobile", self.root).removeClass("is-hidden");
             } else {
                 $.getJSON(opts.source, function (obj) {
                     self.config = obj;
-                    console.log(obj);
                     self.questions = self.config.questions;
 
                     self.log.push(self.config.startQuestion);
