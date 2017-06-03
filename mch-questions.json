@@ -146,7 +146,7 @@
         },
         {
           "text": "Something else",
-          "to": "in-game-questions.end"
+          "to": "in-game-questions.ready"
         }
       ]
     },
