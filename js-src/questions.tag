@@ -17,7 +17,10 @@
         this.currentQuestion = {};
         let self = this;
 
-        displayQuestion(name) {
+        displayQuestion(name, track = true) {
+            if (track) {
+                ga('send', 'event', 'mch-landing', 'display-question', name);
+            }
             this.currentQuestion = this.questions[name];
             this.update();
             this.tags.question.doUpdate();
@@ -38,10 +41,12 @@
 
         displayStartOver() {
             this.log = [];
-            this.displayQuestion(self.config.startQuestion);
+            ga('send', 'event', 'mch-landing', 'start-over');
+            this.displayQuestion(self.config.startQuestion, false);
         }
 
         displayEnd(exitTo) {
+            ga('send', 'event', 'mch-landing', 'exit', exitTo.replace(".", "").replace("-chat", ""));
             $("question", this.root).addClass("is-hidden");
             $(exitTo).removeClass("is-hidden");
         }
