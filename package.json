@@ -1,7 +1,7 @@
 {
   "name": "minecraftirc",
   "version": "1.0.0",
-  "description": "",
+  "description": "The MinecraftIRC.net website",
   "main": "gulpfile.babel.js",
   "dependencies": {
     "foundation-sites": "^6.3.1",
@@ -27,17 +27,14 @@
     "run-sequence": "^1.2.2",
     "webpack": "^2.5.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://tyteen4a03@github.com/MinecraftIRC/MinecraftIRC.net.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "tyteen4a03",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MinecraftIRC/MinecraftIRC.net/issues"
   },
-  "homepage": "https://github.com/MinecraftIRC/MinecraftIRC.net#readme"
+  "homepage": "https://minecraftirc.net"
 }
