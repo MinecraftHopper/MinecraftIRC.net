@@ -132,7 +132,7 @@
     },
     "account-issues.ready": {
       "heading": "Ready to go!",
-      "description": "You're now ready to enter the #minecrafthelp support chat.<br>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li><strong>we are not Mojang</strong> and <strong>we cannot solve your account problems</strong>. You should always <a href=\"help.mojang.com/customer/portal/emails/new\">email Mojang Support</a> for any account issues you have.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li><strong>We are not Mojang</strong> and <strong>we cannot solve your account problems over the chat</strong> - however we'll try to give you advice on what to do.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
       "exitText": "#minecrafthelp"
     },
@@ -162,7 +162,7 @@
     },
     "in-game-questions.ready": {
       "heading": "Ready to go!",
-      "description": "You're now ready to enter the the #minecrafthelp support chat. <br>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li>If you're not getting a response, try <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> or <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a>.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "description": "<p>You're now ready to enter the the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please note that:<br><ol><li>We are all volunteers here and are busy with our own work - please be patient while waiting for a response.</li><li>If you're not getting a response, try <a href=\"https://www.minecraftforum.net\">Minecraft Forums</a>, <a href=\"https://reddit.com/r/Minecraft\">/r/Minecraft</a> or <a href=\"https://reddit.com/r/AskMinecraft\">/r/AskMinecraft</a>.</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
       "exitText": "#minecrafthelp"
     },
@@ -211,7 +211,7 @@
     },
     "technical-issues.ready": {
       "heading": "Ready to go!",
-      "description": "You're now ready to enter the #minecrafthelp support chat. Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs / DxDiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs / DxDiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
       "exitText": "#minecrafthelp"
     }
