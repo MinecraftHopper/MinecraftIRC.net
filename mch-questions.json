@@ -63,6 +63,10 @@
         {
           "text": "Could not connect to server",
           "to": "technical-issues.ready"
+        },
+        {
+          "text": "Something else",
+          "to": "technical-issues.ready"
         }
       ]
     },
