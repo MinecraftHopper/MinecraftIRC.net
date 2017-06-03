@@ -6,19 +6,19 @@
       "question": "What can we help you with today?",
       "choices": [
         {
-          "text": "Account Issues",
+          "text": "Account issues",
           "to": "account-issues"
         },
         {
-          "text": "Technical Issues",
+          "text": "Technical issues",
           "to": "technical-issues.is-pc"
         },
         {
-          "text": "In-game Questions",
+          "text": "In-game questions",
           "to": "in-game-questions"
         },
         {
-          "text": "Something Else",
+          "text": "Something else",
           "to": "technical-issues.ready"
         }
       ]
