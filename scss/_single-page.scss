@@ -1,8 +1,16 @@
 .single-page {
-  margin: 25px auto;
+  margin: 10px auto;
+
+  @include breakpoint (medium up) {
+    margin: 25px auto;
+  }
 
   h1, .page-heading {
-    font-size: 2rem;
+    font-size: 1.75rem;
+
+    @include breakpoint(medium up) {
+      font-size: 2rem;
+    }
   }
 
   h2, .page-subheading {

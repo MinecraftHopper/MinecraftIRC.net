@@ -1,12 +1,4 @@
 .landing-page {
-  .questions-wrapper {
-    margin: 10px auto;
-
-    @include breakpoint (large up) {
-      margin: 20px auto;
-    }
-  }
-
   .chat-iframe {
     display: block;
     margin: 40px auto;
