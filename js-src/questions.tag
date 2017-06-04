@@ -53,6 +53,7 @@
 
         this.on('mount', () => {
             if (isMobile()) {
+                ga('send', 'event', 'mch-landing', 'end-mobile-detection');
                 $("question", self.root).addClass("is-hidden");
                 $(".is-mobile", self.root).removeClass("is-hidden");
             } else {
