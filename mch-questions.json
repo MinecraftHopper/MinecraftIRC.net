@@ -19,7 +19,7 @@
         },
         {
           "text": "Something else",
-          "to": "technical-issues.ready"
+          "to": "something-else.ready"
         }
       ]
     },
@@ -210,6 +210,12 @@
       "choices": null
     },
     "technical-issues.ready": {
+      "heading": "Ready to go!",
+      "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs / DxDiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
+      "exitTo": ".mch-chat",
+      "exitText": "#minecrafthelp"
+    },
+    "something-else.ready": {
       "heading": "Ready to go!",
       "description": "<p>You're now ready to enter the #minecrafthelp support chat. When you enter, just <strong>state your question again</strong> (we can't see what you've answered here) and wait patiently for a response.</p>Please:<br><ol><li>Be patient - we are all volunteers here and are busy with our own work.</li><li>Have crash logs / DxDiag logs ready (if applicable).</li><li>Do not disclose login details into the chat - this is a public place!</li></ol>",
       "exitTo": ".mch-chat",
