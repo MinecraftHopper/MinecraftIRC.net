@@ -7,7 +7,12 @@
     text-align: left;
 
     th {
-      padding: 0 0.625rem;
+      padding: 0.25rem 0.625rem;
+    }
+
+    span {
+      font-weight: normal;
+      display: block;
     }
   }
 }
