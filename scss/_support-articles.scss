@@ -15,4 +15,16 @@
       display: block;
     }
   }
+
+  p {
+    margin: 0;
+  }
+
+  .use-paragraph p {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
