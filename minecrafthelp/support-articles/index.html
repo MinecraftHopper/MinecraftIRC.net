@@ -1,0 +1,30 @@
+---
+layout: single_page
+extraclasses: support-articles-page
+---
+
+<h1 class="page-heading">Support Articles</h1>
+
+<table class="articles-list">
+    <thead>
+        <tr>
+            <td class="article-name"></td>
+            <td class="article-last-updated">Last Updated</td>
+        </tr>
+    </thead>
+    <tbody>
+    {% for article in site.support-articles %}
+        <tr>
+            <td class="article-name"><a href="{{ article.url }}">{{ article.title }}</a></td>
+            <td class="article-last-updated">
+                {%if article.last_updated %}
+                <time datetime="{{ article.last_updated | date_to_xmlschema }}" itemprop="dateUpdated">
+                    {{ article.last_updated | date: "%b %-d, %Y" }}
+                </time>
+                {% else %}
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

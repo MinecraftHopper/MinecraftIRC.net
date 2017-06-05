@@ -31,3 +31,8 @@ exclude:
 include:
   - "css"
   - "js"
+
+collections:
+  support-articles:
+    output: true
+    permalink: /minecrafthelp/:collection/:name/
