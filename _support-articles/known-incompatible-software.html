@@ -4,10 +4,12 @@ title: Known Incompatible Software
 last_updated: 2017-06-05 03:08:00 +0100
 
 softwares:
-  -
-    name: Norton Antivirus
+- name: Antiviruses
+  items:
+  - name: Norton Antivirus
     versions: All Versions
     notes: Use the [Norton Uninstall Tool](http://liveupdate.symantecliveupdate.com/upgrade/RnR/NRnR.exe) for best results.
+
 ---
 
 <p>These software are known to be incompatible with Minecraft, and should be uninstalled from your system.</p>
@@ -21,12 +23,17 @@ softwares:
         </tr>
     </thead>
     <tbody>
-        {% for software in page.softwares %}
+        {% for category in page.softwares %}
+        <tr class="subheading" scope="rowgroup">
+            <th colspan="3">{{ category.name }}</th>
+        </tr>
+            {% for software in category.items %}
         <tr>
-            <td>{{ software.name | markdownify }}</td>
+            <td scope="row">{{ software.name | markdownify }}</td>
             <td>{{ software.versions | markdownify }}</td>
             <td>{% if software.notes %}{{ software.notes | markdownify }}{% endif %}</td>
         </tr>
+            {% endfor %}
         {% endfor %}
     </tbody>
 </table>
