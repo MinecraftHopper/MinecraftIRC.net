@@ -206,7 +206,7 @@
     },
     "technical-issues.has-incompatible-software": {
       "heading": "",
-      "description": "Some software are known to cause problems with Minecraft. It is highly recommended you <a target=\"_blank\" href=\"/support-articles/known-incompatible-software/\">visit the Known Incomaptible Software page</a> and uninstall them before continuing. (NOTE: If you did not uninstall these software before coming into the chat, we will still tell you to uninstall them, so you can save everybody time by uninstalling them now)",
+      "description": "<p><strong>Some software are known to cause problems with Minecraft</strong>. It is highly recommended you <a target=\"_blank\" href=\"/support-articles/known-incompatible-software/\">visit the Known Incomaptible Software page</a> and uninstall them before continuing.</p><p>(<strong>NOTE<strong>: If you did not uninstall these software before coming into the chat, we will still tell you to uninstall them, so you can save everybody time by uninstalling them now)</p>",
       "choices": [
         {
           "text": "I have read the page above and checked my PC for incompatible software",
