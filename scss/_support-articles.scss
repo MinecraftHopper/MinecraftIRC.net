@@ -5,6 +5,16 @@
 .article-table {
   .subheading {
     text-align: left;
+    background-color: #5b5b5b;
+    color: white;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: #aaa;
+      }
+    }
 
     th {
       padding: 0.25rem 0.625rem;
