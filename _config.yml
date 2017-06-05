@@ -35,4 +35,4 @@ include:
 collections:
   support-articles:
     output: true
-    permalink: /minecrafthelp/:collection/:name/
+    permalink: pretty
