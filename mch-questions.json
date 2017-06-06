@@ -156,7 +156,7 @@
     },
     "in-game-questions.command-blocks": {
       "heading": "Ready to go!",
-      "description": "While we are unable to offer command block help, our friends at #commandblock are always here to help. Please note that they, too, are run by volunteers so please be patient while waiting for a response.",
+      "description": "While we are unable to offer command block help, our friends at #commandblocks are always here to help. Please note that they, too, are run by volunteers so please be patient while waiting for a response.",
       "exitTo": ".cmdblocks-chat",
       "exitText": "#commandblocks"
     },
