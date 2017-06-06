@@ -216,7 +216,7 @@
     },
     "technical-issues.end-modded": {
       "heading": "",
-      "description": "We do not offer support for modded clients or servers. For help with mods, contact the mod's author on the mod's thread (usually on Minecraft Forums). Also, try the <a target=\"_blank\" href=\"http://www.minecraftforum.net/forums/support/modded-client-support\">Modded Client Support</a> section.<br/><br/>If you would like help with removing all mods, see <a target=\"_blank\" href=\"http://hopper.minecraft.net/help/guides/reinstalling-minecraft/\">this guide</a> for more information. You'll need to remove all mods before requesting support.<br><br>Feel free to come back if the issue persists after uninstalling Minecraft.",
+      "description": "We do not offer support for modded clients or servers. For help with mods, contact the mod's author on the mod's thread (usually on Minecraft Forums). Also, try the <a target=\"_blank\" href=\"http://www.minecraftforum.net/forums/support/modded-client-support\">Modded Client Support</a> section.<br/><br/>If you would like help with removing all mods, see <a target=\"_blank\" href=\"http://hopper.minecraft.net/help/guides/reinstalling-minecraft/\">this guide</a> for more information. You'll need to remove all mods before requesting support.<br><br>Feel free to come back if the issue persists after uninstalling the mods.",
       "choices": null
     },
     "technical-issues.ready": {
