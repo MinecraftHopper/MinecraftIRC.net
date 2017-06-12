@@ -12,6 +12,7 @@
     <script>
         import {isMobile} from './util.js';
         import question from "./question.tag";
+        import yaml from 'js-yaml';
 
         this.log = [];
         this.currentQuestion = {};
@@ -57,8 +58,8 @@
                 $("question", self.root).addClass("is-hidden");
                 $(".is-mobile", self.root).removeClass("is-hidden");
             } else {
-                $.getJSON(opts.source, function (obj) {
-                    self.config = obj;
+                $.get(opts.source, function (obj) {
+                    self.config = yaml.safeLoad(obj);
                     self.questions = self.config.questions;
 
                     self.log.push(self.config.startQuestion);

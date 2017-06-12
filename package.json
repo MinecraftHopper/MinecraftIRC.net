@@ -6,6 +6,7 @@
   "dependencies": {
     "foundation-sites": "^6.3.1",
     "jquery": "^3.2.1",
+    "js-yaml": "^3.8.4",
     "normalize": "^0.3.1",
     "normalize-scss": "^7.0.0",
     "riot": "^3.5.0",
