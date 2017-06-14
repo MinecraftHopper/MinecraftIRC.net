@@ -198,15 +198,49 @@ questions:
       to: technical-issues.has-incompatible-software
   technical-issues.has-incompatible-software:
     heading: ''
-    description: '<p><strong>Some software are known to cause problems with Minecraft</strong>.
-      It is highly recommended you <a target="_blank" href="/support-articles/known-incompatible-software/">visit
-      the Known Incomaptible Software page</a> and uninstall them before continuing.</p><p>(<strong>NOTE</strong>:
-      If you did not uninstall these software before coming into the chat, we will
-      still tell you to uninstall them, so you can save everybody time by uninstalling
-      them now)</p>'
+    description: |
+      ## Is your problem related to **Unable To Save / Download** errors?
+
+      (e.g. Attempting to move successful download, File is being used by another process)
+
+      If you are on macOS or Linux, choose "No".
     choices:
-    - text: I have read the page above and checked my PC for incompatible software
+    - text: 'Yes'
+      to: technical-issues.bytefence
+    - text: 'No'
       to: technical-issues.ready
+  technical-issues.bytefence:
+    heading:
+    description: |
+      A common cause of these problems is due to your antivirus, or incompatible programs such as ByteFence.
+      If you have ByteFence, follow the following instructions to uninstall it:
+
+      For Windows 10:
+       1. Open or Click Windows Menu.
+       2. Choose the Settings menu to display all contents.
+       3. Select and click on "System".
+       4. Under Windows menu, click on Apps and features.
+       5. Select ByteFence from the list.
+       6. Click on Uninstall button to remove ByteFence.
+
+      For Windows 8 and 8.1 Users
+       1. Click on bottom left corner of the screen.
+       2. Click on Control Panel.
+       3. Click Uninstall a Program.
+       4. Select ByteFence from the list and click Uninstall button.
+
+      For Windows 7, Windows Vista or Windows XP
+       1. Click on Start menu, then Control Panel.
+       2. Double-click Add or Remove Programs.
+       3. In the "Currently Installed Programs" window, select ByteFence and then click Change/Remove.
+
+      After the uninstall **restart your PC** for the changes to apply.
+
+      Also, please make sure you uninstall [all incompatible software](https://minecraftirc.net/support-articles/known-incompatible-software/)
+      from your computer before asking for help.
+    choices:
+      - text: I do not have ByteFence, or I have removed all incompatible programs from my computer
+        to: technical-issues.ready
   technical-issues.end-modded:
     heading: ''
     description: |
