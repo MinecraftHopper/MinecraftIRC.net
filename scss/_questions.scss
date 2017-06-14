@@ -1,45 +1,47 @@
-questions {
-  .tiny-text {
-    font-size: 0.85rem;
-  }
-
-  question {
-    .question-title {
-      font-size: 1.3rem;
+.landing-page {
+  questions {
+    .tiny-text {
+      font-size: 0.85rem;
     }
 
-    .choices {
-      list-style: none;
-      margin-bottom: 0;
-
-      li + li {
-        margin-top: 10px;
+    question {
+      h2, .question-title {
+        font-size: 1.3rem !important;
       }
 
-      input {
-        margin-right: 15px;
+      .choices {
+        list-style: none;
         margin-bottom: 0;
+
+        li + li {
+          margin-top: 10px;
+        }
+
+        input {
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+
+        label {
+          margin: 0;
+        }
       }
 
-      label {
-        margin: 0;
+      .buttons-list {
+        margin-top: 15px;
+
+        button:not(.is-hidden) + button:not(.is-hidden) {
+          margin-left: 5px;
+        }
       }
-    }
 
-    .buttons-list {
-      margin-top: 15px;
+      .button {
+        @include button;
+        margin-bottom: 0;
 
-      button:not(.is-hidden) + button:not(.is-hidden) {
-        margin-left: 5px;
-      }
-    }
-
-    .button {
-      @include button;
-      margin-bottom: 0;
-
-      &.disabled {
-        @include button-disabled;
+        &.disabled {
+          @include button-disabled;
+        }
       }
     }
   }

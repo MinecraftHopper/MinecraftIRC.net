@@ -1,6 +1,6 @@
 <question>
     <h1 class="heading" show="{ opts.question.heading }">{ opts.question.heading }</h1>
-    <p class="description" show="{ opts.question.description }"><raw content="{ opts.question.description }"></raw></p>
+    <p class="description" if="{ opts.question.description }"><raw content="{ markdown.toHTML(opts.question.description) }"></raw></p>
 
     <h2 class="question-title" show="{ opts.question.question }"><raw content="{ opts.question.question }"></raw></h2>
     <ul class="choices" show="{ !opts.question.renderAsButtons }">
@@ -20,6 +20,7 @@
     <script>
         import slug from 'slug';
         import raw from "./raw.tag";
+        import { markdown } from 'markdown';
 
         slug.defaults.modes['pretty'] = {
             replacement: '-',
@@ -30,6 +31,7 @@
             multicharmap: slug.multicharmap
         };
         this.slug = slug;
+        this.markdown = markdown;
 
         onChange() {
             if ($("input[type=radio]:checked", this.root).length > 0) {
