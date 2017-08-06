@@ -212,10 +212,12 @@ questions:
   technical-issues.bytefence:
     heading:
     description: |
-      A common cause of these problems is due to your antivirus, or incompatible programs such as ByteFence.
+      A common cause of these problems is due to your antivirus, or **incompatible programs such as ByteFence**.
+
       If you have ByteFence, follow the following instructions to uninstall it:
 
-      For Windows 10:
+      For **Windows 10**:
+
        1. Open or Click Windows Menu.
        2. Choose the Settings menu to display all contents.
        3. Select and click on "System".
@@ -223,13 +225,15 @@ questions:
        5. Select ByteFence from the list.
        6. Click on Uninstall button to remove ByteFence.
 
-      For Windows 8 and 8.1 Users
+      For **Windows 8 and 8.1**:
+
        1. Click on bottom left corner of the screen.
        2. Click on Control Panel.
        3. Click Uninstall a Program.
        4. Select ByteFence from the list and click Uninstall button.
 
-      For Windows 7, Windows Vista or Windows XP
+      For **Windows 7, Windows Vista or Windows XP**
+
        1. Click on Start menu, then Control Panel.
        2. Double-click Add or Remove Programs.
        3. In the "Currently Installed Programs" window, select ByteFence and then click Change/Remove.
