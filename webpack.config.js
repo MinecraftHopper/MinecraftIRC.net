@@ -26,8 +26,7 @@ const config = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
-                    cacheDirectory: true,
-                    presets: ["latest"]
+                    cacheDirectory: true
                 }
             },
         ]
