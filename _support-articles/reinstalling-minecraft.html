@@ -1,62 +1,49 @@
 ---
 layout: article
 title: "Reinstalling Minecraft"
-last_updated: 2018-10-1 14:45:00 -0300
+last_updated: 2018-03-16 14:00:00 +0000
 ---
 
-   
-<p>
-	<br>In order to reinstall Minecraft, follow these instructions based on your 
-		<abbr title="Operating System, such as Windows or Mac OSX" class="initialism">OS</abbr>, keep in mind that this will not delete your current saves, or worlds.
+<p>In order to reinstall Minecraft, follow these instructions based on your <abbr title="Operating System, such as Windows or Mac OSX" class="initialism">OS</abbr>.
+    <br>This will delete all Minecraft files (including resource packs, server lists, settings, screenshots, logs, etc.) <strong>except for your worlds</strong>. Your Realms worlds and Mojang account will also not be affected.
+</p>
+<br>
+<h5>Windows</h5>
+<ol>
+    <li>Press your  
+        <abbr title="Between the Control and Alt keys, usually to the left of the space bar">Windows</abbr> and R keys, to bring up the "Run" dialog
+    </li>
+    <li>In the prompt, type in, 
+        <code>%AppData%\.minecraft</code>
+    </li>
+    <li>Delete everything 
+        <strong>except the saves folder</strong>
+    </li>
+</ol>
 
-	</p>
-</div>
-<fieldset>
-	<legend>
-		<strong>Windows</strong>
-	</legend>
-</fieldset>
-<p>
-	<strong>To reinstall Minecraft on Windows, follow these instructions.</strong>
-</p>
+<h5>Mac</h5>
+<ol>
+    <li>Open a Terminal window. The Terminal application can be found under <em>Finder -&gt; Go -&gt; Applications -&gt; Utilities</em>.</li>
+    <li>Copy and paste this into the terminal (right-click -> <em>Paste</em>):
+        <code>curl -L {{ site.url }}/static/scripts/reinstall-minecraft.sh | sh</code>
+    </li>
+</ol>
+
+<h5>Linux</h5>
+<ol>
+    <li>Open a Terminal window.</li>
+    <li>Copy and paste this into the terminal 
+        <code>curl -L {{ site.url }}/static/scripts/reinstall-minecraft.sh | sh</code>
+    </li>
+</ol>
+
+<p>Once you restart your client, the game will automatically reinstall the necessary files.</p>
+<br>
+<h5>For Advanced Users: Minecraft Reinstall Script</h5>
+<p>You can find the content of the script <a href="{{ site.url }}/static/scripts/reinstall-minecraft.sh">here</a>.</p>
+Checksums:
 <ul>
-	<li>Press your  
-		<abbr title="Between the Control and Alt keys, usually to the left of the space bar">Windows</abbr> and R keys, to bring up the "run" dialogue
-	</li>
-	<li>In the prompt, type in, 
-		<code>%AppData%\.minecraft</code>
-	</li>
-	<li>Delete everything 
-		<strong>except the saves folder</strong>
-	</li>
+    <li>MD5 Checksum: b4e3f2988cf06d7f8f95ca2bcd743cab</li>
+    <li>SHA-1 Checksum: fd22345652093e348df1aecd55cc059eee2e246b</li>
+    <li>SHA-256 Checksum: 9adf85ac637eae3fee2e2220dbf23f526e6e337b136f02c52324fe2e87333dff</li>
 </ul>
-<fieldset>
-	<legend>
-		<strong>Mac OSX</strong>
-	</legend>
-</fieldset>
-<p>To reinstall Minecraft on Mac, first locate a program called "Terminal", Which can be found by opening Finder and browsing to 
-	<em>Applications -&gt; Utilities -&gt; Terminal</em>
-</p>
-<ul>
-	<li>Open a terminal window</li>
-	<li>Type in the terminal:  
-		<code>mcd=\~/Library/Application\ Support/minecraft &amp;&amp; mv $mcd\/saves ~/temp/saves &amp;&amp; rm -fr $mcd\/* &amp;&amp; mv ~/temp/saves/ $mcd</code>
-	</li>
-</ul>
-<fieldset>
-	<legend>
-		<strong>Linux</strong>
-	</legend>
-</fieldset>
-<p>To reinstall Minecraft on Linux, follow these instructions</p>
-<ul>
-	<li>Open a terminal window</li>
-	<li>Type in  
-		<code>mcd=\~/.minecraft &amp;&amp; mv $mcd\/saves ~/temp/saves &amp;&amp; rm -fr $mcd\/* &amp;&amp; mv ~/temp/saves/ $mcd</code>
-	</li>
-</ul>
-<fieldset>
-	<legend>Complete</legend>
-	<p>Once you restart your client, the game will automatically reinstall the necessary files.</p>
-</fieldset>
