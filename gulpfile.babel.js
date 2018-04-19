@@ -21,7 +21,8 @@ gulp.task('css', () => {
                 './node_modules/foundation-sites/scss',
                 './node_modules/normalize-scss/sass'
             ]
-        }));
+        }))
+        .on('error', log);
 
     if (yargs.argv.production) {
         pipe = pipe.pipe(uglifycss({
