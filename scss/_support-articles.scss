@@ -1,5 +1,15 @@
 .support-article {
+  .article-content {
+    img {
+      @include breakpoint (small up) {
+        margin: 1rem auto;
+      }
 
+      @include breakpoint (medium up) {
+        margin: 1rem 0;
+      }
+    }
+  }
 }
 
 .article-table {
