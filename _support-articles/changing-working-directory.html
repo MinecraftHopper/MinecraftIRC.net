@@ -1,0 +1,29 @@
+---
+layout: article
+title: "Changing Minecraft Working Directory"
+last_updated: 2018-04-20 14:45:00 +0000
+---
+
+
+<p>
+    In some cases, you may need to completely change the root folder (the working directory) that Minecraft uses — this is now possible with the new launcher.
+</p>
+
+
+<h2>Windows</h2>
+<ol>
+    <li>Right click on <code>Minecraft.exe</code> or <code>Minecraft.jar</code> (the launcher) and press "Create Shortcut".</li>
+    <li>Right click on the new shortcut that gets generated and press "Properties".</li>
+    <li>At the end of the 'Target' bar, add the following: <code>--workDir {the new working directory}</code>, such as <code>%ProgramData%\.minecraft</code><br>
+        For example, if your new working directory is <code>%ProgramData%\.minecraft</code>, the window should look like this:
+        <img class="block" src="/static/images/support-articles/workdir-windows.png">
+    </li>
+    <li>Press 'OK' and then run the shortcut, and Minecraft should launch.</li>
+</ol>
+<p><strong>Note:</strong> If you should ever need to move the actual <code>Minecraft.exe</code> file (not the shortcut), you will have to follow these instructions again.</p>
+
+<h3>Mac OSX and Linux</h3>
+<p>
+    Create a terminal script that launches <code>Minecraft.jar</code> with the <code>--workDir</code> parameter, to a destination that does not contain special characters in it. For example:
+    <code class="block">open ~/unsafe/path/to/Minecraft.jar --workDir {the new working directory}</code>
+</p>
