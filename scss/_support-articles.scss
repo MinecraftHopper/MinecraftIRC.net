@@ -1,5 +1,9 @@
 .support-article {
   .article-content {
+    .block {
+      display: block;
+    }
+
     img {
       @include breakpoint (small up) {
         margin: 1rem auto;
