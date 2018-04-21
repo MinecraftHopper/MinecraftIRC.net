@@ -8,10 +8,7 @@ $topbar-submenu-background: whitesmoke;
 $menu-item-background-active: #4a4a4a;
 $topbar-padding: 1rem;
 $dropdownmenu-arrow-color: white;
-
-@if $flex {
-  $global-flexbox: true !global;
-}
+$global-flexbox: true;
 
 @include foundation-global-styles;
 @include foundation-flex-grid;
