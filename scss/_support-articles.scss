@@ -1,5 +1,19 @@
 .support-article {
+  .article-content {
+    .block {
+      display: block;
+    }
 
+    img {
+      @include breakpoint (small up) {
+        margin: 1rem auto;
+      }
+
+      @include breakpoint (medium up) {
+        margin: 1rem 0;
+      }
+    }
+  }
 }
 
 .article-table {

@@ -2,5 +2,7 @@
   .chat-iframe {
     display: block;
     margin: 40px auto;
+    min-height: 50vh;
+    width: 100%;
   }
 }

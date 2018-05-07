@@ -1,0 +1,30 @@
+---
+layout: article
+title: "System File Checker"
+last_updated: 2018-04-20 14:45:00 +0000
+---
+
+<p>System File Checker, or 'SFC' for short, is a built-in Windows tools that checks for system files that may be corrupt or missing.</p>
+
+<h2>Running a Command Prompt</h2>
+    <p><strong>For Windows 8 or above</strong>:</p>
+    <ol>
+        <li>Go to "Start" and search "cmd"</li>
+        <li>At the first option, "cmd" right click it and in the bottom menu choose "Run as an administrator"</li>
+        <li>You
+            <span style="background-color: rgb(255, 255, 255);">may </span>receive a UAC prompt; confirm it.
+        </li>
+    </ol>
+    <p><strong>For Windows Vista or Windows 7</strong>:</p>
+    <ol>
+        <li>Go to "Start" and search "cmd"</li>
+        <li>Right click on the first item and press "Run as an administrator".</li>
+        <li>You may receive a UAC prompt; confirm it.</li>
+    </ol>
+
+<h2>Running System File Checker</h2>
+    <p>Once you've opened an administrative Command Prompt window, run the command: <code>sfc /scannow</code>.</p>
+    <p>Your window should be similar to this:</p>
+    <img src="/static/images/support-articles/sfc-output.png">
+    <p>Press Enter and let the command run, this will take a while. When the scan is complete, you are given results through the command-line window.</p>
+    <p>After this is complete, restart the computer.</p>
