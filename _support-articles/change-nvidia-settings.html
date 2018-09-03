@@ -1,0 +1,29 @@
+---
+layout: article
+title: "Force Computer To Use Nvidia Hardware"
+last_updated: 2018-09-03 13:042:00 +0000
+---
+
+
+<p>
+    In some cases, if you are using a laptop, you may need to force Minecraft to use your Nvidia Graphics hardware instead of the Intel hardware.
+</p>
+
+
+<h2>Windows</h2>
+<ol>
+    <li>Click the Show Hiddent Icons button <code>Looks like ^</code> on your taskbar, then right click the Nvidia icon and select Nvidia Control Panel
+        <img class="block" src="/static/images/support-articles/trayicon.png"></li>
+    <li>In the Nvidia Control Panel, click the Manage 3D Settings option from the menu at the left, then click on the Program Settings tab.
+    <img class="block" src="/static/images/support-articles/nvcontrolpanel.png"></li>
+    <li>Because Minecraft runs using Java, you need to add the version of Java that Minecraft uses to this list, not the Minecraft launcher itself
+        Click on the Add button, and in the window that opens, click the browse button.</li>
+    <li>By default Minecraft uses its bundled version of Java, which can be found at <code>C:\Program Files (x86)\Minecraft\runtime\jre-x64\1.8.0_51\bin</code>
+        Enter that in the address bar at the top of the Browse window select the javaw program, then hit open.
+        <img class="block" src="/static/images/support-articles/browseadd.png">
+        <strong>Note:</strong> If you have set the game to use a different version of Java, or the bundled Java gets updated, you will need to adjust the folder you use for this step</li>
+    <li>It should then autoselect what you just added, but make sure the Java you just added is selected below the "Select a program to customize option"
+        In the list below "Specify the settings for this program" scroll down until you see the option "OpenGL rendering GPU", click the drop down menu next to it, and select your Nvidia hardware.
+        <img class="block" src="/static/images/support-articles/selectgpu.png"></li>
+    <li>Click on the Apply button, then close the Nvidia Control Panel and try to run the game again, you can press F3 ingame to confirm your Nvidia hardware is being used.</li>    
+</ol>
