@@ -7,7 +7,7 @@ questions:
     choices:
     - text: Account issues
       to: account-issues
-    - text: Can't login
+    - text: Cannot Log In
       to: account-issues.unable-log-in.message
     - text: Technical issues
       to: technical-issues.is-pc
@@ -53,11 +53,11 @@ questions:
   account-issues.unable-log-in.reset-password:
     heading: ''
     description: ''
-    question: Have you tried resetting your password? Checked your spam folder after 15 mins?
+    question: Have you tried [resetting your password](https://account.mojang.com/password)? Make sure to check the spam folder. The reset password email may take up to 15 minutes to arrive.
     choices:
     - text: 'Yes'
       to: account-issues.unable-log-in.is-throttled
-    - text: 'I don't receive the email'
+    - text: 'I have not received the email after 15 minutes'
       to: account-issues.account-hacked
   account-issues.unable-log-in.is-throttled:
     heading: ''
