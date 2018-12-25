@@ -55,7 +55,7 @@ questions:
     description: ''
     question: Have you tried [resetting your password](https://account.mojang.com/password)? Make sure to check the spam folder. The reset password email may take up to 15 minutes to arrive.
     choices:
-    - text: 'Yes'
+    - text: 'Yes, and the new password doesn't work'
       to: account-issues.unable-log-in.is-throttled
     - text: 'I have not received the email after 15 minutes'
       to: account-issues.account-hacked
