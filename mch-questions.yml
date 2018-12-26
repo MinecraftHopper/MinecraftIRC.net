@@ -7,6 +7,8 @@ questions:
     choices:
     - text: Account issues
       to: account-issues
+    - text: Cannot Log In
+      to: account-issues.unable-log-in.message
     - text: Technical issues
       to: technical-issues.is-pc
     - text: In-game questions
@@ -45,9 +47,18 @@ questions:
     question: Have you been able to log into Minecraft on this computer before?
     choices:
     - text: 'Yes'
-      to: account-issues.unable-log-in.is-throttled
+      to: account-issues.unable-log-in.reset-password
     - text: 'No'
       to: technical-issues.ready
+  account-issues.unable-log-in.reset-password:
+    heading: ''
+    description: ''
+    question: Have you tried [resetting your password](https://account.mojang.com/password)? Make sure to check the spam folder. The reset password email may take up to 15 minutes to arrive.
+    choices:
+    - text: 'Yes, and the new password doesn't work'
+      to: account-issues.unable-log-in.is-throttled
+    - text: 'I have not received the email after 15 minutes'
+      to: account-issues.account-hacked
   account-issues.unable-log-in.is-throttled:
     heading: ''
     description: >
@@ -63,6 +74,9 @@ questions:
       If you think your account was hacked, please see
       [this Mojang Support article](https://help.mojang.com/customer/portal/articles/361483) for information on how to
       get your account back.
+
+      Note that our volunteers **have no access to account information**, and can't help you with account issues.
+      If you already [sent a email to Mojang](https://help.mojang.com/customer/portal/emails/new), please wait for their response.
 
       If you have read the article above and would like to speak to our volunteers, please continue below:
     choices:
