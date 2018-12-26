@@ -7,6 +7,8 @@ questions:
     choices:
     - text: Account issues
       to: account-issues
+    - text: Cannot Log In
+      to: account-issues.unable-log-in.message
     - text: Technical issues
       to: technical-issues.is-pc
     - text: In-game questions
@@ -14,8 +16,7 @@ questions:
     - text: Something else
       to: something-else.ready
   account-issues:
-    description: While we are unable to help with accounts issues (we are not Mojang),
-      we can still help you find the right place to ask for help.
+    description: While we are unable to help with accounts issues (we are not Mojang), we can still help you find the right place to ask for help.
     question: What account issues are you having?
     choices:
     - text: Unable to log into Minecraft
@@ -40,16 +41,20 @@ questions:
     - text: Something else
       to: technical-issues.ready
   account-issues.unable-log-in.logged-in-before:
-    heading: ''
-    description: ''
     question: Have you been able to log into Minecraft on this computer before?
     choices:
     - text: 'Yes'
-      to: account-issues.unable-log-in.is-throttled
+      to: account-issues.unable-log-in.reset-password
     - text: 'No'
       to: technical-issues.ready
+  account-issues.unable-log-in.reset-password:
+    question: Have you tried [resetting your password](https://account.mojang.com/password)? Make sure to check the spam folder. The reset password email may take up to 15 minutes to arrive.
+    choices:
+    - text: 'Yes, and the new password doesnt work'
+      to: account-issues.unable-log-in.is-throttled
+    - text: 'I have not received the email after 15 minutes'
+      to: account-issues.account-hacked
   account-issues.unable-log-in.is-throttled:
-    heading: ''
     description: >
       Most likely, **your login is being throttled**. This can happen if you have too many failed login
       attempts. Wait **one** hour, [reset your password](https://account.mojang.com/password), then try logging
@@ -63,6 +68,9 @@ questions:
       If you think your account was hacked, please see
       [this Mojang Support article](https://help.mojang.com/customer/portal/articles/361483) for information on how to
       get your account back.
+
+      Note that our volunteers **have no access to account information**, and can't help you with account issues.
+      If you already [sent a email to Mojang](https://help.mojang.com/customer/portal/emails/new), please wait for their response.
 
       If you have read the article above and would like to speak to our volunteers, please continue below:
     choices:
