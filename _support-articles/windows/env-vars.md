@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Removing Memory Limit From Environment Variables"
+title: "Removing Memory Limit From Environment Variables (Windows)"
 last_updated: 2019-01-03 13:00:00 +0000
 ---
 
@@ -10,15 +10,17 @@ In most cases you will need to manually remove the setting **after finding and r
 
 ## Instructions for Windows 7/8/8.1/10
 
-1\. Use the Search function from the Windows Desktop to look for "System". If you get multiple results, select the one listed as part of the Control Panel. On Windows 7 and later you can access the search by just clicking the Windows Icon on the taskbar once and starting to type out your search term. On Windows 8/8.1, if you have not enabled the Windows Icon, you should have access to a search bar on the desktop, or one of the desktop menus.
+1\. Use the Search function from the Windows Desktop to look for "System". If you get multiple results, select the one listed as part of the Control Panel.
+
+On **Windows 7 and Windows 10** you can search by clicking the Windows Icon on the taskbar and type in your query. On **Windows 8/8.1**, if you have not enabled the Windows Icon, you should have access to a search bar on the desktop, or one of the desktop menus.
 
 ![](/static/images/support-articles/windows/env-vars/syssearch.png)
 
-2\. In the window that opens up, find and select the option called "Advanced system settings". 
+2\. In the window that opens up, find and select the option called **Advanced System Settings**. 
 
 ![](/static/images/support-articles/windows/env-vars/advsettings.png)
 
-3\. A new window will open, press the button labeled "Environment Variables".
+3\. A new window will open; press the button labeled **Environment Variables**.
 
 ![](/static/images/support-articles/windows/env-vars/envvars.png)
 
@@ -26,10 +28,10 @@ In most cases you will need to manually remove the setting **after finding and r
 
 ![](/static/images/support-articles/windows/env-vars/delvar.png)
 
-5\. If you find that setting in either list. Select it, then press the delete button. Can then press the "Okay", or "Apply" buttons until all the windows are closed.
+5\. If you find that setting in either list, click on it, then press the **Delete** button. Afterwards press the **OK** or **Apply** buttons until all the windows are closed.
 
-  **NOTE:** If you did not originally add this setting on your own, make sure you have removed the [incompatible program](https://minecraftirc.net/support-articles/known-incompatible-software/) that caused it, otherwise it will re-add this setting and you will need to complete these instructions again.
+  **NOTE:** If you did not add this variable yourself, make sure you have removed the [incompatible program](/support-articles/known-incompatible-software/) that caused it, otherwise it will re-add this setting and you will need to repeat these instructions.
 
 6\. Restart your computer.
 
-7\. Open the Minecraft launcher and attempt to start the game.
+7\. Open the Minecraft launcher and try running the game again.
