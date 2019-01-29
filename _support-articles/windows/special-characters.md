@@ -14,6 +14,6 @@ To be clear, this includes only (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU
 
 ## Instructions for Supported Windows Versions:
 
-Windows 7, 8, 8.1: https://support.microsoft.com/en-us/help/13951/windows-create-user-account#create-user-account=windows  
+Windows 7, 8, 8.1: <https://support.microsoft.com/en-us/help/13951/windows-create-user-account#create-user-account=windows>  
 **NOTE:** Scroll down for Windows 7 instructions, use the Windows 8.1 instructions for Windows 8  
-Windows 10: https://support.microsoft.com/en-us/help/4026923/windows-10-create-a-local-user-or-administrator-account
+Windows 10: <https://support.microsoft.com/en-us/help/4026923/windows-10-create-a-local-user-or-administrator-account>
