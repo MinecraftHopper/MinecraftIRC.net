@@ -8,9 +8,9 @@ Having an exclamation point (!), or some non-English Alphanumeric characters in 
 
 In some cases you can fix this by changing the working directory the game uses by following the instructions [here](/support-articles/changing-working-direcotry/).
 
-If that does not resolve the issue, you will need to create a new local Windows User Account containing only English Alphanumernic characters.
-To be clear, this includes only (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789) exactly as they are seen on this page.  
-**NOTE:** Changing your Windows User Account name will not correct the issue, you **NEED** to create a new local account.
+If that does not resolve the issue, you will need to create a new local Windows User Account containing only English alphanumernic characters (a to z, A to Z, 0 to 9).
+
+**NOTE:** Changing your Windows User Account name will not correct the issue. You **must** create a new Windows User Account.
 
 ## Instructions for Supported Windows Versions:
 
