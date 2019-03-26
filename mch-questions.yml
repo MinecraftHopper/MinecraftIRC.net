@@ -21,6 +21,8 @@ questions:
     choices:
     - text: Unable to log into Minecraft
       to: account-issues.unable-log-in.message
+    - text: Email related issues
+      to: account-issues.account-hacked
     - text: Only able to play demo mode
       to: account-issues.demo-mode
     - text: Payment issues
@@ -65,17 +67,14 @@ questions:
   account-issues.account-hacked:
     heading: ''
     description: >
-      If you think your account was hacked, please see
+      If you think your account was hacked or you don't receive Mojang's emails, please see
       [this Mojang Support article](https://help.mojang.com/customer/portal/articles/361483) for information on how to
       get your account back.
 
       Note that our volunteers **have no access to account information**, and can't help you with account issues.
       If you already [sent a email to Mojang](https://help.mojang.com/customer/portal/emails/new), please wait for their response.
-
-      If you have read the article above and would like to speak to our volunteers, please continue below:
+      You can see [this article](https://help.mojang.com/customer/en/portal/articles/359446-when-will-i-hear-back-) for information on when they will get back to you
     choices:
-    - text: I have read the article and would like more assistance
-      to: account-issues.ready
   account-issues.demo-mode:
     heading: ''
     description: |
