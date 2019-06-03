@@ -6,7 +6,7 @@ last_updated: 2019-01-28 13:00:00 +0000
 
 Having an exclamation point (!), or some non-English Alphanumeric characters in your Windows User Account name will cause the game to crash.
 
-In some cases you can fix this by changing the working directory the game uses by following the instructions [here](/support-articles/changing-working-direcotry/).
+In some cases you can fix this by changing the working directory the game uses by following the instructions [here](/support-articles/changing-working-directory/).
 
 If that does not resolve the issue, you will need to create a new local Windows User Account containing only English alphanumernic characters (a to z, A to Z, 0 to 9).
 
