@@ -16,7 +16,7 @@ Turn on the options **Keep the launcher open while the game is running** and **O
 ![](/static/images/support-articles/log/log-step2.png)
 
 #### Step 3
-The buttons should now be green. Start the game now by clicking on **PLAY**.
+The check boxes should now be green. Click on the Java Edition tab on the Launcher and start the game now by clicking on **PLAY**.
 ![](/static/images/support-articles/log/log-step3.png)
 
 #### Step 4
