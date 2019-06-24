@@ -38,8 +38,6 @@ Press the "Paste!" option and it will redirect you to a URL with all the text yo
 ![](/static/images/support-articles/log/log-step7.png)
 
 #### Step 8
-Press the "Paste!" option and it will redirect you to a URL with all the text you pasted. The URL looks like this: https://paste.ubuntu.com/p/AbcDefg1h3/  
+Copy the URL as seen in the image below and give it to the person that is asking for your Launcher log.  
 ![](/static/images/support-articles/log/log-step8.png)
 
-#### Step 9
-Copy the URL as seen in the image above and give it to the person that is asking for your Launcher log.  
