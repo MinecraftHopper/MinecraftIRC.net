@@ -43,4 +43,3 @@ Press the "Paste!" option and it will redirect you to a URL with all the text yo
 
 #### Step 9
 Copy the URL as seen in the image above and give it to the person that is asking for your Launcher log.  
-![](/static/images/support-articles/log/log-step9.png)
