@@ -32,7 +32,7 @@ If you do not have the Nvidia icon in your system tray, you can access the Nvidi
 
 3\. Click on the "Add" button, and in the window that opens, click the "Browse" button.
 
-4\. By default Minecraft uses its bundled version of Java, which can be found at `C:\Program Files (x86)\Minecraft\runtime\jre-x64\1.8.0_51\bin`
+4\. By default Minecraft uses its bundled version of Java, which can be found at `C:\Program Files (x86)\Minecraft Launcher\runtime\jre-x64\bin`
 Enter that in the address bar at the top of the Browse window select `javaw.exe`, then hit "Open".
 
 ![](/static/images/support-articles/nvidia-optimus/browseadd.png)
