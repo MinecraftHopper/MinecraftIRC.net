@@ -7,28 +7,30 @@ last_updated: 2019-02-19 11:45:00 +0000
 The Minecraft launcher keeps logs of game events as they happen which can be useful for debugging errors or other issues that may occur within the game. Follow the directions below to obtain these log files from Minecraft.
 
 #### Step 1
-Open the Minecraft launcher if not already open. Click on the hamburger on the top right of the launcher.
+Open the Minecraft launcher if not already open. Click on 'Settings' button.
 ![](/static/images/support-articles/log/log-step1.png)
 
 
 #### Step 2
-Click on the "Settings" button.  
+Turn on the options **Keep the launcher open while the game is running** and **Open output log when the game starts** by clicking on the grey check boxes.
 ![](/static/images/support-articles/log/log-step2.png)
 
 #### Step 3
-Turn on the options **Keep the launcher open while the game is running** and **Open output log when the game starts** by clicking on the grey buttons.  
+The buttons should now be green. Start the game now by clicking on **PLAY**.
 ![](/static/images/support-articles/log/log-step3.png)
 
 #### Step 4
-The buttons should now be green. Start the game now by clicking on **PLAY**.  
+This windows should appear - for now let it run in the background.
 ![](/static/images/support-articles/log/log-step4.png)
 
 #### Step 5
-This windows should appear - for now let it run in the background.  
+As soon as your issue has occurred, copy the entire log by pressing Ctrl + A (Windows / Linux) / Cmd + A (Mac). All text in the window should be highlighted. Afterwards press Ctrl + C (Windows / Linux) / Cmd + C (Mac) to copy the text into the clipboard. 
 ![](/static/images/support-articles/log/log-step5.png)
 
 #### Step 6
-As soon as your issue has occurred, copy the entire log by pressing `Ctrl + A` (Windows / Linux) / `Cmd + A` (Mac). All text in the window should be highlighted. Afterwards press `Ctrl + C` (Windows / Linux) / `Cmd + C` (Mac) to copy the text into the clipboard.
+Open Ubuntu Pastebin: http://paste.ubuntu.com
+
+Paste the text you copied from the file into the text area in the center of the page at Ubuntu Paste by pressing Ctrl + V (Windows / Linux) / Cmd + V (Mac), or by right-clicking on the Content text field (highlighted in red), then select Paste. The "Poster" field will be your Minecraft Username. 
 ![](/static/images/support-articles/log/log-step6.png)
 
 #### Step 7
