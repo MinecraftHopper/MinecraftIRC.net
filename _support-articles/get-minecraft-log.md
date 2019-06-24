@@ -34,9 +34,7 @@ Paste the text you copied from the file into the text area in the center of the 
 ![](/static/images/support-articles/log/log-step6.png)
 
 #### Step 7
-Open Ubuntu Pastebin: http://paste.ubuntu.com
-
-Paste the text you copied from the file into the text area in the center of the page at Ubuntu Paste by pressing `Ctrl + V` (Windows / Linux) / `Cmd + V` (Mac), or by right-clicking on the Content text field (highlighted in red), then select **Paste**. The "Poster" field will be your Minecraft Username.
+Press the "Paste!" option and it will redirect you to a URL with all the text you pasted. The URL looks like this: https://paste.ubuntu.com/p/AbcDefg1h3/
 ![](/static/images/support-articles/log/log-step7.png)
 
 #### Step 8
