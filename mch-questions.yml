@@ -1,7 +1,7 @@
 ---
 questions:
   intro:
-    heading: 'Welcome to #minecrafthelp!'
+    heading: 'Welcome to #minecrafthelp'
     description: To help you get to the right place, please answer a few questions below.
     question: What can we help you with today?
     choices:
