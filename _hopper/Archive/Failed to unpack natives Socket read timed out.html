@@ -1,0 +1,162 @@
+---
+layout: article
+title: "Failed to Unpack Natives: Socket Read Timed Out"
+last_updated: 
+---
+
+<div class="row-fluid">
+	<div class="span12">
+		<ul class="breadcrumb well">
+			<li><a href="/help">Help</a> <span class="divider">/</span></li>
+			<li class="active">Failed to unpack natives: Socket read timed out</li>
+		</ul>
+	</div>
+</div>
+<h1>Failed to unpack natives: Socket read timed out</h1>
+<p>This error is caused when certain files fail to properly download, and are incorrectly "skipped" by the launcher,
+	believing that the file already exists, while it in reality does not.</p>
+<p>This in return, gives an error when the game tries to open a couple of files, and it actually realizes that the file
+	does not exist, returning the <em>java.util.zip.ZipException: error in opening zip file</em> exception.</p>
+
+<hr>
+<fieldset>
+	<div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;">
+
+		<h2 style="color: rgb(22, 32, 41); display: block; font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; font-size: 30px; height: 33px; line-height: 33px; margin: 30px 0px 15px; width: 735px;"
+			id="what-causes-this-error"><span style="font-weight: normal;">What causes this error</span></h2>
+
+		<p><strong>SocketTimeoutException</strong> can be caused by many issues, which include but are not limited to:
+		</p><br>
+		<div id="wmd-preview-section-35" class="wmd-preview-section preview-content">
+			<div class="se-section-delimiter"></div>
+
+			<h4 id="firewall"><em class="icon-file"></em> Faulty antivirus and or firewall</h4>
+
+			<p>Antiviruses and firewalls block some applications from connecting to the internet to prevent the computer
+				from being infected with malware. However, this behaviour is sometimes too intrusive and may cause
+				non-malware to get blocked too.</p>
+
+			<div id="wmd-preview-section-36" class="wmd-preview-section preview-content">
+				<div class="se-section-delimiter"></div>
+
+				<h4 id="malware"><em class="icon-folder-open"></em> Malware</h4>
+
+				<p>Certain malware are known to cause errors when applications try to connect to external sites.</p>
+
+			</div>
+		</div>
+		<div id="wmd-preview-section-37" class="wmd-preview-section preview-content">
+			<div class="se-section-delimiter"></div>
+
+			<h4 id="latency"><em class="icon-hdd"></em> Latency to servers</h4>
+
+			<p>If your internet connection is too slow, Minecraft may fail to download some files because the download
+				took too long and the system thought the connection was lost.</p>
+
+			<br>
+
+			<blockquote>
+				<strong>NOTE:</strong> None of these sound your issue? Still not working? Contact our <a
+					href="http://hopper.minecraft.net/help/technical-support-resources/">support resources</a>!
+			</blockquote>
+
+			<hr>
+
+		</div>
+	</div>
+</fieldset>
+<div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;" id="wmd-preview-section-38"
+	class="wmd-preview-section preview-content">
+	<div class="se-section-delimiter"></div>
+
+	<h2 id="firewalls-and-antiviruses"><span style="font-weight: normal;">Firewalls and antiviruses</span></h2>
+
+	<p>Certain <strong>firewalls and antiviruses</strong> are known to have issues with Minecraft.</p>
+
+	<p>It is recommended that you un-install them, if you are using one.</p>
+
+	<p>You can check what AntiVirus you are using by holding the Windows key, then pressing “R”.</p>
+
+	<p>In the Run dialogue, type in “<strong>appwiz.cpl</strong>” and press OK.</p>
+
+	<p>Search for anything that has “<em>Security</em>“, “<em>Firewall</em>“, or “<em>Antivirus</em>” as a keyword, and
+		you should be able to pinpoint the antivirus or firewall application that you are using, and also un-install it.
+	</p>
+
+	<br>
+	<blockquote>
+		<strong>NOTE:</strong>
+		Make sure you know what you are removing, else you could get unexpected output!
+	</blockquote>
+
+	<hr>
+
+</div>
+<div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;" id="wmd-preview-section-39"
+	class="wmd-preview-section preview-content">
+	<div class="se-section-delimiter"></div>
+
+	<h2 id="malware-or-hijacked-files"><span style="font-weight: normal;">Malware</span></h2>
+
+	<p>Having <strong>malware</strong> installed on your computer is harmful to your system, and corrupts the game.</p>
+
+	<p>There are several utilities out there which serve the purpose of removing, clearing and identifying malware on
+		your computer.</p>
+
+	<p>The utility that we reccommend is <a
+			href="http://hopper.minecraft.net/help/technical-support-resources/">Malwarebytes</a>, which can be used,
+		free of charge. You can also use <a
+			href="http://hopper.minecraft.net/help/technical-support-resources/">ADWCleaner</a><a> for one-time removal
+			of malware.</a></p><a>
+
+		<p>We recommend that you run a <strong>Full scan</strong> on your computer to identify all possible threats.</p>
+
+		<hr>
+
+	</a>
+</div>
+<div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;" id="wmd-preview-section-40"
+	class="wmd-preview-section preview-content">
+	<div class="se-section-delimiter"></div>
+
+	<h2 id="latency-to-servers"><span style="font-weight: normal;">Latency to servers</span></h2>
+
+	<p>Severe <strong>latency</strong> may also be the cause for these errors.</p>
+
+	<p>Please do the following to help diagnose if there is an issue with communicating with Mojang’s servers;</p>
+
+	<br>
+	<blockquote>
+		<strong>NOTE:</strong> It is advised that you contact our <a
+			href="http://hopper.minecraft.net/help/technical-support-resources/">support resources</a> to guide you
+		through this process!
+	</blockquote>
+	<div id="wmd-preview-section-41" class="wmd-preview-section preview-content">
+		<div class="se-section-delimiter"></div>
+
+		<h3 id="windows"><span style="font-weight: normal;">Windows</span></h3>
+
+		<ul>
+			<li>Press your Windows and R keys at the same time to bring up a “Run” dialogue.</li>
+			<li>Enter in “cmd” and then press OK.</li>
+			<li>Execute the following command: <code>tracert libraries.minecraft.net</code>.</li>
+			<li>After a while the command will finish, and give a bit of output.</li>
+			<li>If you look to the third row, you should see a bunch of numbers, if any of them are &gt;100ms, then this
+				can indicate that there is an issue.</li>
+		</ul>
+
+	</div>
+	<div id="wmd-preview-section-42" class="wmd-preview-section preview-content">
+		<div class="se-section-delimiter"></div>
+
+		<h3 id="mac-osx"><span style="font-weight: normal;">Mac OSX</span></h3>
+
+		<ul>
+			<li>Open a terminal, you can get to it by searching “Terminal” at spotlight.</li>
+			<li>Execute the following command: <code>traceroute libraries.minecraft.net</code>.</li>
+			<li>After a while the command will finish, and give a bit of output.</li>
+			<li>If you look to the right, you should see a bunch of numbers, if any of them are &gt;100ms, then this can
+				indicate that there is an issue.</li>
+		</ul>
+	</div>
+</div>
