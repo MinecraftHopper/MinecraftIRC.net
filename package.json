@@ -27,6 +27,7 @@
     "riot-tag-loader": "^1.0.0",
     "riot-webpack": "^0.0.1",
     "run-sequence": "^2.1.0",
+    "uglify-loader": "^3.0.0",
     "webpack": "^3.5.3",
     "yargs": "^11.0.0"
   },
