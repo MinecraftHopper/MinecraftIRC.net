@@ -11,7 +11,8 @@
     "normalize": "^0.3.1",
     "normalize-scss": "^7.0.0",
     "riot": "^3.6.1",
-    "slug": "^0.9.1"
+    "slug": "^0.9.1",
+    "natives": "^1.1.6"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -33,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://tyteen4a03@github.com/MinecraftIRC/MinecraftIRC.net.git"
+    "url": "git+https://github.com/MinecraftIRC/MinecraftIRC.net.git"
   },
   "author": "tyteen4a03",
   "license": "MIT",
