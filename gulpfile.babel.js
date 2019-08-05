@@ -90,11 +90,5 @@ gulp.task('serve', () => {
     gulp.watch('js-src/*.*', ['webpack']);
 });
 
-gulp.task('default', ['css', 'webpack', 'jekyll', 'serve']);
-gulp.task('build', (cb) => {
-    runSeq(
-        ['css', 'webpack'],
-        'jekyll-build',
-        cb
-    );
-});
+gulp.task('default', gulp.parallel('css', 'webpack', 'jekyll', 'serve'));
+gulp.task('build', gulp.series(['css', 'webpack', 'jekyll-build']));
