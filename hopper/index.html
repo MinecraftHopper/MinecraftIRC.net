@@ -1,0 +1,31 @@
+---
+layout: single_page
+extraclasses: support-articles-page
+title: Hopper Articles
+---
+
+<h1 class="page-heading">Hopper Articles</h1>
+
+<table class="articles-list">
+    <thead>
+    <tr>
+        <th class="article-name">Article Name</th>
+        <th class="article-last-updated">Last Updated</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for article in site.hopper %}
+    <tr>
+        <td class="article-name"><a href="{{ article.url }}">{{ article.title }}</a></td>
+        <td class="article-last-updated">
+            {%if article.last_updated %}
+            <time datetime="{{ article.last_updated | date_to_xmlschema }}" itemprop="dateUpdated">
+                {{ article.last_updated | date: "%b %-d, %Y" }}
+            </time>
+            {% else %}
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

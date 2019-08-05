@@ -1,0 +1,5 @@
+.git/**
+.idea/**
+.github/**
+vendor/**
+node_modules/*

@@ -1,0 +1,81 @@
+---
+layout: article
+title: "LoadLibrary Error 126"
+last_updated: 
+---
+
+<div class="row-fluid">
+	<div class="span12">
+		<ul class="breadcrumb">
+			<li><a href="/help">Help</a> <span class="divider">/</span></li>
+			<li class="active">LoadLibrary: Error 126</li>
+		</ul>
+	</div>
+</div>
+<div class="hero-unit">
+	<h1>LoadLibrary: Error 126</h1>
+	<p><br>
+		This error, or any variants of it, are caused when using older AMD (formerly ATI) GPUs in which improperly
+		identify their libraries, or "files".
+	</p>
+</div>
+<fieldset>
+	<legend>
+		How to fix this
+	</legend>
+	<p>
+		First, you want to find if you have a 32bit / 64bit OS.
+	</p>
+	<p>
+		<strong>You can do this by -</strong> Pressing your Windows + R keys, to bring up a run dialogue, in it, type
+		in: "<strong>cmd</strong>", and hit enter. This will bring up a command prompt window. In the window, type in:
+		<code>echo %processor_architecture%</code> then hit enter.
+	</p>
+	<p>
+		If the output was <strong>amd64</strong>, you have a <strong>64-bit OS</strong>. If the output was
+		<strong>x86</strong>, you have a 32-bit OS.
+	</p>
+</fieldset>
+<fieldset>
+	<legend><strong>
+			32bit OS</strong></legend>
+	<p>
+		Open a command prompt window as an Administrator, and type in the following command:
+	</p>
+	<p>
+		<code>CD %windir%\system32</code>
+	</p>
+	<p>
+		Then, run this command:
+	</p>
+	<p>
+		<code>COPY atioglxx.dll .dll</code>
+	</p>
+</fieldset>
+<fieldset>
+	<legend><strong>
+			64bit OS
+		</strong></legend>
+	<p>
+		Open a command prompt window as an Administrator.
+	</p>
+	<p>
+		In the command prompt window, type in:
+	</p>
+	<p>
+		<code>CD %windir%\system32</code>
+	</p>
+	<p>
+		Once you have done that, type in:
+	</p>
+	<p>
+		<code>COPY atio6axx.dll .dll</code>
+	</p>
+	<p>
+		Then try running the game, if the error persists, then you may have a mobile card, if so, type in:
+	</p>
+
+	<p>
+		<code>COPY .dll atiogl64.dll</code>
+	</p>
+</fieldset>

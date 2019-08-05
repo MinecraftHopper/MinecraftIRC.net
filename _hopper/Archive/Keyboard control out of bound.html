@@ -1,0 +1,77 @@
+---
+layout: article
+title: "Keyboard Control Out of Bound"
+last_updated: 
+---
+
+<div class="row-fluid">
+	<div class="span12">
+		<ul class="breadcrumb">
+			<li><a href="/help">Help</a> <span class="divider">/</span></li>
+			<li class="active">Keyboard control out of bound</li>
+		</ul>
+	</div>
+</div>
+<div class="hero-unit">
+	<h1>Keyboard control out of bound</h1>
+	<p><br>
+		This error can usually caused by having an invalid control configurations. Common occurrences can be resolved by
+		resetting your Minecraft options to default.
+	</p>
+</div>
+<fieldset>
+	<legend>Resetting your Minecraft settings to default</legend>
+</fieldset>
+
+
+<span style="font-weight: normal; padding: 4px 8px;" class="badge badge-info">
+	NOTE: This assumes that Minecraft is running from it's default directory!
+</span>
+
+
+<div>
+	<p>
+		<strong><br>Windows - </strong>
+	</p>
+	<p>
+		Press the <abbr title="Between the Control and Alt keys, usually to the left of the space bar">Windows</abbr> +
+		R keys, to bring up a Run dialogue. In Run, type in:
+		<code>%AppData%\.minecraft</code>, and hit enter. This should bring up your Minecraft folder, where the game
+		store's it's content. Look for a file called "options.txt", and delete it.
+	</p>
+</div>
+
+<div>
+	<p>
+		<strong>Mac - </strong>
+	</p>
+	<p>
+		In Finder, press <code>⌘ + Shift + G </code>. This should present you with a "Go to folder" dialogue. In it,
+		input:  <code>~/Library/Application Support/minecraft</code>, and hit go. This should bring you to your
+		Minecraft directory, look for a file called "options.txt", and drag it to the trash.
+	</p>
+
+</div>
+
+<div>
+	<p>
+		<strong>Linux - </strong>
+	</p>
+	<p>
+		Delete <code>~/.minecraft/options.txt</code>.
+	</p>
+
+</div>
+
+
+<p class="text-error"><strong>
+		After you have done the above, restart Minecraft and the settings will be regenerated to default.
+	</strong></p>
+<fieldset>
+	<legend>Still not working?</legend>
+</fieldset>
+
+<p>
+	If the above guide did not solve your issue, you may want to see <span class="plugin_link"><a
+			href="/help/out-of-bounds/">this more general guide</a></span>.
+</p>
