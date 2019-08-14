@@ -4,23 +4,18 @@ title: "Using WhatIsHang to Debug Hangs"
 last_updated: 
 ---
 
-<ul style="margin-bottom: 40px;" class="breadcrumb">
-	<li><a href="/help">Help</a> <span class="divider">/</span></li>
-	<li><a href="/help/guides">Guides</a> <span class="divider">/</span></li>
-	<li class="active">Using WhatIsHang to debug hangs</li>
-</ul>
-<h1>Using WhatIsHang to debug application hangs</h1>
-<p><br><em>WhatIsHang</em> is a program by NirSoft that helps to debug "hangs" or unexpected freezes that can occur in
+
+<h1>Using WhatIsHang to debug application&nbsp;hangs</h1>
+<p><br><em>WhatIsHang</em>&nbsp;is a program by NirSoft that helps to debug "hangs" or unexpected freezes that can occur in
 	Windows programs. If Minecraft suddenly stops responding for an unknown reason, the program can be used to
 	understand where the hang occurred and what caused it.</p>
 <div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;">
 	<h2 style="font-weight: normal;">Getting started</h2>
 	<p>To get started, first you need to do the following:</p>
 	<ul>
-		<li>Find the Java architecture you are currently using (x64 or x86).</li>
+		<li>Find the Java&nbsp;architecture you are currently using (x64 or x86).</li>
 		<li>Know how to reproduce an application hang, (i.e. know how to make Minecraft freeze)</li>
-		<li>Download the appropriate version of <em>WhatIsHang </em>from the downloads page <a
-				href="http://www.nirsoft.net/utils/what_is_hang.html#download">here</a>, links are at the bottom of the
+		<li>Download the appropriate version of <em>WhatIsHang </em>from the downloads page <a href="http://www.nirsoft.net/utils/what_is_hang.html#download">here</a>, links are at the bottom of the
 			page.</li>
 	</ul>
 	<hr>
@@ -32,17 +27,17 @@ last_updated:
 	</p>
 	<p>Open the folder of which you extracted the data to, and run the program 'WhatIsHang.exe'.</p>
 	<p>You should get a similar interface like this:</p>
-	<img src="http://i.imgur.com/xIZjemg.png" alt="WhatIsHang UI">
+	<img src="/static/images/hopper/using-whatishang-to-debug-hangs-1.png" alt="WhatIsHang UI">
 	<hr>
 </div>
 <div style="font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;">
 	<h2 style="font-weight: normal;">Using the program</h2>
 	<p>After you have ran WhatIsHang, you should then run Minecraft or whatever that was freezing again.</p>
 	<p>Wait for the game to freeze, and when it does, a new item should pop up in WhatIsHang.</p>
-	<p>It should look like this:</p><img src="http://i.imgur.com/K9UZRKq.png" alt="WhatIsHang item found">
+	<p>It should look like this:</p><img src="/static/images/hopper/using-whatishang-to-debug-hangs-2.png" alt="WhatIsHang item found">
 	<hr>
 	<p>If you click on the item ('Minecraft 1.7.4' in the screenshot) and press F9, you should get a log generated which
-		should look similar to this:</p><img src="http://i.imgur.com/P8fJsKo.png" alt="WhatIsHang item details">
+		should look similar to this:</p><img src="/static/images/hopper/using-whatishang-to-debug-hangs-3.png" alt="WhatIsHang item details">
 	<hr>
 	<p>If you get two events, and one of them returns "Access Denied", then try the other event; otherwise copy the
 		entire log generated and share it with whom is assisting you.</p>
