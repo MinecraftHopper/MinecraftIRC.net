@@ -5,7 +5,7 @@
   "main": "gulpfile.babel.js",
   "dependencies": {
     "foundation-sites": "^6.4.2",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "js-yaml": "^3.13.1",
     "markdown": "^0.5.0",
     "normalize": "^0.3.1",
